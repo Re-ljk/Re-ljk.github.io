@@ -20,25 +20,7 @@
   </url>
   
   <url>
-    <loc>https://www.leejk-magic.top/box/nav/index.html</loc>
-    
-    <lastmod>2023-03-22</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://www.leejk-magic.top/box/animation/index.html</loc>
-    
-    <lastmod>2023-03-22</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.leejk-magic.top/life/games/index.html</loc>
     
     <lastmod>2023-03-22</lastmod>
     
@@ -56,25 +38,25 @@
   </url>
   
   <url>
+    <loc>https://www.leejk-magic.top/box/nav/index.html</loc>
+    
+    <lastmod>2023-03-22</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.leejk-magic.top/life/games/index.html</loc>
+    
+    <lastmod>2023-03-22</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://www.leejk-magic.top/life/movies/index.html</loc>
-    
-    <lastmod>2023-03-22</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.leejk-magic.top/site/census/index.html</loc>
-    
-    <lastmod>2023-03-22</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.leejk-magic.top/personal/about/index.html</loc>
     
     <lastmod>2023-03-22</lastmod>
     
@@ -92,7 +74,7 @@
   </url>
   
   <url>
-    <loc>https://www.leejk-magic.top/personal/love/index.html</loc>
+    <loc>https://www.leejk-magic.top/site/census/index.html</loc>
     
     <lastmod>2023-03-22</lastmod>
     
@@ -102,6 +84,24 @@
   
   <url>
     <loc>https://www.leejk-magic.top/personal/bb/index.html</loc>
+    
+    <lastmod>2023-03-22</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.leejk-magic.top/personal/love/index.html</loc>
+    
+    <lastmod>2023-03-22</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.leejk-magic.top/personal/about/index.html</loc>
     
     <lastmod>2023-03-22</lastmod>
     
