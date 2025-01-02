@@ -341,18 +341,24 @@
         height: 75vh;
     }
 
-    /* 调整整个容器的左右边距 */
+    /* 整体容器，设置统一的内边距 */
     .about-container {
-        padding-left: 80px;  /* 增大左侧空隙 */
-        padding-right: 80px; /* 增大右侧空隙 */
+        padding-left: 80px;  /* 左侧空隙 */
+        padding-right: 80px; /* 右侧空隙 */
+        background-color: #f3f4f6; /* 背景色统一 */
     }
 
-    /* 为文章部分、项目等部分添加统一样式，去掉独立的框 */
-    .article-card-content, .my-projects, .my-skills, .my-gallery {
+    /* 统一的内容样式 */
+    .about-content {
         background: linear-gradient(120deg, #ffffff, #f3f4f6);
         box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
         border-radius: 10px;
         padding: 30px;
+        margin-bottom: 20px;
+    }
+
+    /* 小部件之间的空隙 */
+    .widget {
         margin-bottom: 20px;
     }
 </style>
@@ -550,8 +556,8 @@
             </div>
         </div>
 
-        <!-- 关于我部分，直接在内容区域 -->
-        <div class="article-card-content" data-aos="fade-up">
+        <!-- 关于我部分，不再是单独的卡片框，而是整体布局的一部分 -->
+        <div class="about-content" data-aos="fade-up">
             <div class="title center-align" data-aos="zoom-in-up">
                 <i class="fa fa-address-book"></i>&nbsp;&nbsp;关于我
             </div>
@@ -576,8 +582,9 @@
             </div>
         </div>
 
-        <!-- 其他小部件部分 -->
-        <style type="text/css">
+        <!-- 其他小部件部分，不再是单独的卡片框 -->
+        <div class="widget" data-aos="fade-up">
+            <style type="text/css">
     #posts-chart,
     #categories-chart,
     #tags-chart {
@@ -744,9 +751,10 @@
     tagsChart.setOption(tagsOption);
 </script>
 
+        </div>
 
         
-        <div class="my-projects" data-aos="fade-up">
+        <div class="widget" data-aos="fade-up">
             
 <div class="my-projects">
     <div class="title center-align" data-aos="zoom-in-up">
@@ -802,7 +810,7 @@
         
 
         
-        <div class="my-skills" data-aos="fade-up">
+        <div class="widget" data-aos="fade-up">
             
 <div class="my-skills">
     <div class="title center-align" data-aos="zoom-in-up">
@@ -949,7 +957,7 @@
         
 
         
-        <div class="my-gallery" data-aos="fade-up">
+        <div class="widget" data-aos="fade-up">
             
 <div id="myGallery" class="my-gallery">
     <div class="title center-align" data-aos="zoom-in-up">
@@ -993,6 +1001,7 @@
 
         </div>
         
+
     </div>
 </main>
 
