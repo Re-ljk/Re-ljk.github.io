@@ -336,45 +336,33 @@
 </header>
 
     <style type="text/css">
-    /* 不需要单独的框架 */
+    /* 全局样式 */
     .about-cover {
         height: 75vh;
     }
 
-    .card-content {
-        background: linear-gradient(120deg, #ffffff, #f3f4f6);
-        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-        border-radius: 10px;
-        padding: 30px;
-    }
-
     .about-container {
-        padding-left: 80px; /* 增大左侧空隙 */
-        padding-right: 80px; /* 增大右侧空隙 */
+        padding-left: 80px;
+        padding-right: 80px;
     }
 
     .about-section {
-        padding: 30px 0;
         display: flex;
         flex-wrap: wrap;
+        justify-content: space-between;
         gap: 20px;
+        padding: 30px 0;
     }
 
-    .about-left {
+    .about-left,
+    .about-right {
         flex: 1;
         min-width: 250px;
-        text-align: center;
     }
 
     .about-center {
         flex: 2;
         min-width: 300px;
-        text-align: center;
-    }
-
-    .about-right {
-        flex: 1;
-        min-width: 250px;
         text-align: center;
     }
 
@@ -441,7 +429,6 @@
 
 <main class="content">
     <div id="aboutme" class="container about-container">
-        <!-- 统一框架，不单独分开关于我和其他模块 -->
         <div class="about-section">
             <!-- 左侧统计信息 -->
             <div class="about-left" data-aos="zoom-in-right">
@@ -468,7 +455,7 @@
 
             </div>
 
-            <!-- 中间关于我内容 -->
+            <!-- 中间个人信息 -->
             <div class="about-center" data-aos="zoom-in-up">
                 <div class="profile center-align">
                     <div class="avatar">
@@ -747,7 +734,7 @@
 
 
         
-        
+            
 <div class="my-projects">
     <div class="title center-align" data-aos="zoom-in-up">
         <i class="fas fa-gift"></i>&nbsp;&nbsp;我的项目
@@ -801,7 +788,7 @@
         
 
         
-        
+            
 <div class="my-skills">
     <div class="title center-align" data-aos="zoom-in-up">
         <i class="fas fa-wrench"></i>&nbsp;&nbsp;我的技能
@@ -946,7 +933,7 @@
         
 
         
-        
+            
 <div id="myGallery" class="my-gallery">
     <div class="title center-align" data-aos="zoom-in-up">
         <i class="far fa-image"></i>&nbsp;&nbsp;相册
