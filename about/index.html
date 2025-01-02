@@ -340,72 +340,6 @@
     .about-cover {
         height: 75vh;
     }
-
-    .card-content {
-        background: linear-gradient(120deg, #ffffff, #f3f4f6);
-        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-        border-radius: 10px;
-        padding: 30px;
-    }
-
-    .profile .avatar-img {
-        border: 4px solid #007bff;
-        width: 150px;
-        height: 150px;
-    }
-
-    .profile .title {
-        font-size: 2rem;
-        font-weight: bold;
-        margin-top: 10px;
-        color: #333;
-    }
-
-    .profile .career {
-        font-size: 1.2rem;
-        color: #555;
-        margin-bottom: 20px;
-    }
-
-    .social-link a {
-        margin: 0 5px;
-        font-size: 1.5rem;
-        color: #007bff;
-    }
-
-    .social-link a:hover {
-        color: #0056b3;
-    }
-
-    .article-card-content {
-        line-height: 1.8;
-        font-size: 1.1rem;
-        color: #555;
-    }
-
-    .article-card-content h2 {
-        font-size: 1.8rem;
-        font-weight: bold;
-        color: #007bff;
-        margin-bottom: 15px;
-    }
-
-    .article-card-content p,
-    .article-card-content ul li {
-        margin-bottom: 10px;
-    }
-
-    .article-card-content ul li {
-        background: #007bff;
-        color: #fff;
-        padding: 10px;
-        border-radius: 5px;
-        list-style: none;
-    }
-
-    .article-card-content ul li:hover {
-        background: #0056b3;
-    }
 </style>
 
 <div class="bg-cover pd-header about-cover">
@@ -466,9 +400,9 @@
 <main class="content">
 
     <div id="aboutme" class="container about-container">
-
+        <div class="card">
+            <div class="card-content">
                 <div class="row">
-                    <!-- Post Statistics (Left) -->
                     <div class="post-statis col l4 hide-on-med-and-down" data-aos="zoom-in-right">
                         
 <div class="statis">
@@ -492,15 +426,12 @@
 
 
                     </div>
-
-                    <!-- Profile (Center) -->
                     <div class="col s12 m12 l4">
                         <div class="profile center-align">
                             <div class="avatar">
                                 <img src="/medias/avatar.jpg" alt="Jiankuanli" class="circle responsive-img avatar-img">
                             </div>
                             <div class="author">
-                                <!-- Post Statistics (Small Devices) -->
                                 <div class="post-statis hide-on-large-only" data-aos="zoom-in-right">
                                     
 <div class="statis">
@@ -526,7 +457,6 @@
                                 </div>
                                 <div class="title">Jiankuanli</div>
                                 <div class="career"></div>
-                                <!-- Social Links (Small Devices) -->
                                 <div class="social-link hide-on-large-only" data-aos="zoom-in-left">
                                     
     <a href="https://github.com/Re-ljk" class="tooltipped" target="_blank" data-tooltip="访问我的GitHub" data-position="top" data-delay="50">
@@ -564,8 +494,6 @@
                             </div>
                         </div>
                     </div>
-
-                    <!-- Social Links (Right) -->
                     <div class="col l4 hide-on-med-and-down" data-aos="zoom-in-left">
                         <div class="social-link">
                             
@@ -604,10 +532,9 @@
                     </div>
                 </div>
 
-                <!-- Content Section -->
-                <div class="card-content article-card-content">
-                    <div id="articleContent" data-aos="fade-up">
-                        <h2 id="🌟-Career"><a href="#🌟-Career" class="headerlink" title="🌟 Career:"></a>🌟 Career:</h2><p>AI Researcher | Software Engineer</p>
+            <div class="card-content article-card-content">
+    <div id="articleContent" data-aos="fade-up">
+        <h2 id="🌟-Career"><a href="#🌟-Career" class="headerlink" title="🌟 Career:"></a>🌟 Career:</h2><p>AI Researcher | Software Engineer</p>
 <hr>
 <h2 id="🌱-Introduction"><a href="#🌱-Introduction" class="headerlink" title="🌱 Introduction:"></a>🌱 Introduction:</h2><p>I’m currently pursuing a degree in <strong>Artificial Intelligence</strong> at <strong>Yangzhou University</strong>.<br><br>🔜 Soon graduating with an AI degree from <strong>Yangzhou University</strong>, and pursuing postgraduate studies at <strong>University of Electronic Science and Technology of China (UESTC)</strong>.<br></p>
 <hr>
@@ -619,10 +546,10 @@
 <hr>
 <p>🌍 I love contributing to <strong>open-source projects</strong> and solving <strong>real-world problems</strong>.<br><br>🚀 Always exploring cutting-edge technology and sharing knowledge.</p>
 
-                    </div>
-                </div>
+    </div>
+</div>
 
-                <!-- Widgets Section -->
+
                 <style type="text/css">
     #posts-chart,
     #categories-chart,
@@ -1035,6 +962,7 @@
                 
             </div>
         </div>
+
     </div>
 </main>
 
