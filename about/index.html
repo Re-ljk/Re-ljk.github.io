@@ -336,7 +336,7 @@
 </header>
 
     <style type="text/css">
-    /* don't remove. */
+    /* 不需要单独的框架 */
     .about-cover {
         height: 75vh;
     }
@@ -353,18 +353,17 @@
         padding-right: 80px; /* 增大右侧空隙 */
     }
 
-    /* 合并到统一的布局 */
     .about-section {
+        padding: 30px 0;
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-between;
         gap: 20px;
-        padding: 30px 0;
     }
 
     .about-left {
         flex: 1;
         min-width: 250px;
+        text-align: center;
     }
 
     .about-center {
@@ -376,6 +375,7 @@
     .about-right {
         flex: 1;
         min-width: 250px;
+        text-align: center;
     }
 
     .about-title {
@@ -440,9 +440,10 @@
 </div>
 
 <main class="content">
-
     <div id="aboutme" class="container about-container">
+        <!-- 统一框架，不单独分开关于我和其他模块 -->
         <div class="about-section">
+            <!-- 左侧统计信息 -->
             <div class="about-left" data-aos="zoom-in-right">
                 
 <div class="statis">
@@ -466,6 +467,8 @@
 
 
             </div>
+
+            <!-- 中间关于我内容 -->
             <div class="about-center" data-aos="zoom-in-up">
                 <div class="profile center-align">
                     <div class="avatar">
@@ -536,6 +539,8 @@
                     </div>
                 </div>
             </div>
+
+            <!-- 右侧社交链接 -->
             <div class="about-right" data-aos="zoom-in-left">
                 
     <a href="https://github.com/Re-ljk" class="tooltipped" target="_blank" data-tooltip="访问我的GitHub" data-position="top" data-delay="50">
@@ -572,6 +577,7 @@
             </div>
         </div>
 
+        <!-- 其他模块 -->
         <style type="text/css">
     #posts-chart,
     #categories-chart,
