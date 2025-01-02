@@ -341,6 +341,12 @@
         height: 75vh;
     }
 
+    /* 给关于我部分添加左右空隙 */
+    .about-container {
+        padding-left: 80px; /* 增加左侧空隙 */
+        padding-right: 80px; /* 增加右侧空隙 */
+    }
+
     .card-content {
         background: linear-gradient(120deg, #ffffff, #f3f4f6);
         box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
@@ -348,10 +354,12 @@
         padding: 30px;
     }
 
-    .about-container {
-        padding-left: 80px; /* 增大左侧空隙 */
-        padding-right: 80px; /* 增大右侧空隙 */
+    /* 进一步细化 card-content 的样式 */
+    .about-container .card-content {
+        padding-left: 0; /* 防止出现左右内边距 */
+        padding-right: 0; /* 防止出现左右内边距 */
     }
+
 </style>
 
 <div class="bg-cover pd-header about-cover">
@@ -412,11 +420,9 @@
 <main class="content">
 
     <div id="aboutme" class="container about-container">
-        <div class="card">
-            <div class="card-content">
-                <div class="row">
-                    <div class="post-statis col l4 hide-on-med-and-down" data-aos="zoom-in-right">
-                        
+        <div class="row">
+            <div class="post-statis col l4 hide-on-med-and-down" data-aos="zoom-in-right">
+                
 <div class="statis">
     <span class="count"><a href="/">3</a></span>
     <span class="name">文章</span>
@@ -437,15 +443,15 @@
 </div>
 
 
+            </div>
+            <div class="col s12 m12 l4">
+                <div class="profile center-align">
+                    <div class="avatar">
+                        <img src="/medias/avatar.jpg" alt="Jiankuanli" class="circle responsive-img avatar-img">
                     </div>
-                    <div class="col s12 m12 l4">
-                        <div class="profile center-align">
-                            <div class="avatar">
-                                <img src="/medias/avatar.jpg" alt="Jiankuanli" class="circle responsive-img avatar-img">
-                            </div>
-                            <div class="author">
-                                <div class="post-statis hide-on-large-only" data-aos="zoom-in-right">
-                                    
+                    <div class="author">
+                        <div class="post-statis hide-on-large-only" data-aos="zoom-in-right">
+                            
 <div class="statis">
     <span class="count"><a href="/">3</a></span>
     <span class="name">文章</span>
@@ -466,48 +472,10 @@
 </div>
 
 
-                                </div>
-                                <div class="title">Jiankuanli</div>
-                                <div class="career"></div>
-                                <div class="social-link hide-on-large-only" data-aos="zoom-in-left">
-                                    
-    <a href="https://github.com/Re-ljk" class="tooltipped" target="_blank" data-tooltip="访问我的GitHub" data-position="top" data-delay="50">
-        <i class="fab fa-github"></i>
-    </a>
-
-
-
-    <a href="mailto:jiangkuanli@163.com" class="tooltipped" target="_blank" data-tooltip="邮件联系我" data-position="top" data-delay="50">
-        <i class="fas fa-envelope-open"></i>
-    </a>
-
-
-
-
-
-
-
-    <a href="tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=2338428461" class="tooltipped" target="_blank" data-tooltip="QQ联系我: 2338428461" data-position="top" data-delay="50">
-        <i class="fab fa-qq"></i>
-    </a>
-
-
-
-
-
-    <a href="https://www.zhihu.com/people/nan-xi-lie-jiu-93" class="tooltipped" target="_blank" data-tooltip="关注我的知乎: https://www.zhihu.com/people/nan-xi-lie-jiu-93" data-position="top" data-delay="50">
-        <i class="fab fa-zhihu1">知</i>
-    </a>
-
-
-
-
-                                </div>
-                            </div>
                         </div>
-                    </div>
-                    <div class="col l4 hide-on-med-and-down" data-aos="zoom-in-left">
-                        <div class="social-link">
+                        <div class="title">Jiankuanli</div>
+                        <div class="career"></div>
+                        <div class="social-link hide-on-large-only" data-aos="zoom-in-left">
                             
     <a href="https://github.com/Re-ljk" class="tooltipped" target="_blank" data-tooltip="访问我的GitHub" data-position="top" data-delay="50">
         <i class="fab fa-github"></i>
@@ -543,13 +511,51 @@
                         </div>
                     </div>
                 </div>
+            </div>
+            <div class="col l4 hide-on-med-and-down" data-aos="zoom-in-left">
+                <div class="social-link">
+                    
+    <a href="https://github.com/Re-ljk" class="tooltipped" target="_blank" data-tooltip="访问我的GitHub" data-position="top" data-delay="50">
+        <i class="fab fa-github"></i>
+    </a>
 
-                <div class="card-content article-card-content">
-                    <div class="title center-align" data-aos="zoom-in-up">
-                        <i class="fa fa-address-book"></i>&nbsp;&nbsp;关于我
-                    </div>
-                    <div id="articleContent" data-aos="fade-up">
-                        <h2 id="🌟-Career"><a href="#🌟-Career" class="headerlink" title="🌟 Career:"></a>🌟 Career:</h2><p>AI Researcher | Software Engineer | Tech Enthusiast | Lifelong Learner</p>
+
+
+    <a href="mailto:jiangkuanli@163.com" class="tooltipped" target="_blank" data-tooltip="邮件联系我" data-position="top" data-delay="50">
+        <i class="fas fa-envelope-open"></i>
+    </a>
+
+
+
+
+
+
+
+    <a href="tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=2338428461" class="tooltipped" target="_blank" data-tooltip="QQ联系我: 2338428461" data-position="top" data-delay="50">
+        <i class="fab fa-qq"></i>
+    </a>
+
+
+
+
+
+    <a href="https://www.zhihu.com/people/nan-xi-lie-jiu-93" class="tooltipped" target="_blank" data-tooltip="关注我的知乎: https://www.zhihu.com/people/nan-xi-lie-jiu-93" data-position="top" data-delay="50">
+        <i class="fab fa-zhihu1">知</i>
+    </a>
+
+
+
+
+                </div>
+            </div>
+        </div>
+
+        <div class="card-content article-card-content">
+            <div class="title center-align" data-aos="zoom-in-up">
+                <i class="fa fa-address-book"></i>&nbsp;&nbsp;关于我
+            </div>
+            <div id="articleContent" data-aos="fade-up">
+                <h2 id="🌟-Career"><a href="#🌟-Career" class="headerlink" title="🌟 Career:"></a>🌟 Career:</h2><p>AI Researcher | Software Engineer | Tech Enthusiast | Lifelong Learner</p>
 <h2 id="🌱-Introduction"><a href="#🌱-Introduction" class="headerlink" title="🌱 Introduction:"></a>🌱 Introduction:</h2><p>I’m currently pursuing a degree in <strong>Artificial Intelligence</strong> at <strong>Yangzhou University</strong> and will soon be graduating with a specialization in AI applications.<br><br>🔜 In the coming months, I will be continuing my academic journey with <strong>postgraduate studies</strong> at the <strong>University of Electronic Science and Technology of China (UESTC)</strong>, focusing on advancing AI and its integration into <strong>real-world solutions</strong>.<br></p>
 <p>With a passion for technology and innovation, I aim to explore how AI can reshape industries and society, particularly in the fields of <strong>generative AI</strong>, <strong>cybersecurity</strong>, and <strong>computer vision</strong>. I’m driven by a desire to merge <strong>theoretical research</strong> with <strong>practical implementation</strong>.</p>
 <h2 id="🔭-My-Research-Focuses-On"><a href="#🔭-My-Research-Focuses-On" class="headerlink" title="🔭 My Research Focuses On:"></a>🔭 My Research Focuses On:</h2><ul>
@@ -566,10 +572,10 @@
 <h2 id="🌱-Outside-of-Academia"><a href="#🌱-Outside-of-Academia" class="headerlink" title="🌱 Outside of Academia:"></a>🌱 Outside of Academia:</h2><p>In addition to my academic pursuits, I actively engage in community-driven initiatives and seek out <strong>collaborative opportunities</strong> to build technologies that address pressing issues. I love <strong>hacking new ideas</strong> and developing prototypes that can help bridge the gap between theory and real-world application.</p>
 <p>Feel free to connect with me if you’re working on exciting AI projects, looking for research collaborations, or simply want to chat about <strong>cutting-edge technologies</strong>! Let’s create a smarter future together! 🌟</p>
 
-                    </div>
-                </div>
+            </div>
+        </div>
 
-                <style type="text/css">
+        <style type="text/css">
     #posts-chart,
     #categories-chart,
     #tags-chart {
@@ -737,8 +743,8 @@
 </script>
 
 
-                
-                
+        
+        
 <div class="my-projects">
     <div class="title center-align" data-aos="zoom-in-up">
         <i class="fas fa-gift"></i>&nbsp;&nbsp;我的项目
@@ -789,10 +795,10 @@
     </div>
 </div>
 
-                
+        
 
-                
-                
+        
+        
 <div class="my-skills">
     <div class="title center-align" data-aos="zoom-in-up">
         <i class="fas fa-wrench"></i>&nbsp;&nbsp;我的技能
@@ -934,10 +940,10 @@
 
 </div>
 
-                
+        
 
-                
-                
+        
+        
 <div id="myGallery" class="my-gallery">
     <div class="title center-align" data-aos="zoom-in-up">
         <i class="far fa-image"></i>&nbsp;&nbsp;相册
@@ -978,9 +984,7 @@
     });
 </script>
 
-                
-            </div>
-        </div>
+        
     </div>
 </main>
 
