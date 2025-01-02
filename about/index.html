@@ -406,6 +406,32 @@
     .article-card-content ul li:hover {
         background: #0056b3;
     }
+
+    /* Centering content with left and right margins */
+    .about-container {
+        display: flex;
+        justify-content: center;
+        padding: 30px; /* Add padding to create space on the sides */
+    }
+
+    .card {
+        width: 100%;
+        max-width: 1100px; /* Set max width */
+    }
+
+    .row {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    /* Title for the About Me section */
+    .about-title {
+        text-align: center;
+        font-size: 2.5rem;
+        font-weight: bold;
+        margin-bottom: 30px;
+        color: #007bff;
+    }
 </style>
 
 <div class="bg-cover pd-header about-cover">
@@ -465,11 +491,16 @@
 
 <main class="content">
 
+    <!-- About Me Title -->
+    <div class="about-title">
+        关于我
+    </div>
+
     <div id="aboutme" class="container about-container">
-                <div class="row">
-                    <!-- Post Statistics (Left) -->
-                    <div class="post-statis col l4 hide-on-med-and-down" data-aos="zoom-in-right">
-                        
+        <div class="row">
+            <!-- Post Statistics (Left) -->
+            <div class="post-statis col l4 hide-on-med-and-down" data-aos="zoom-in-right">
+                
 <div class="statis">
     <span class="count"><a href="/">3</a></span>
     <span class="name">文章</span>
@@ -490,18 +521,18 @@
 </div>
 
 
+            </div>
+
+            <!-- Profile (Center) -->
+            <div class="col s12 m12 l4">
+                <div class="profile center-align">
+                    <div class="avatar">
+                        <img src="/medias/avatar.jpg" alt="Jiankuanli" class="circle responsive-img avatar-img">
                     </div>
-
-                    <!-- Profile (Center) -->
-                    <div class="col s12 m12 l4">
-                        <div class="profile center-align">
-                            <div class="avatar">
-                                <img src="/medias/avatar.jpg" alt="Jiankuanli" class="circle responsive-img avatar-img">
-                            </div>
-                            <div class="author">
-                                <!-- Post Statistics (Small Devices) -->
-                                <div class="post-statis hide-on-large-only" data-aos="zoom-in-right">
-                                    
+                    <div class="author">
+                        <!-- Post Statistics (Small Devices) -->
+                        <div class="post-statis hide-on-large-only" data-aos="zoom-in-right">
+                            
 <div class="statis">
     <span class="count"><a href="/">3</a></span>
     <span class="name">文章</span>
@@ -522,51 +553,11 @@
 </div>
 
 
-                                </div>
-                                <div class="title">Jiankuanli</div>
-                                <div class="career"></div>
-                                <!-- Social Links (Small Devices) -->
-                                <div class="social-link hide-on-large-only" data-aos="zoom-in-left">
-                                    
-    <a href="https://github.com/Re-ljk" class="tooltipped" target="_blank" data-tooltip="访问我的GitHub" data-position="top" data-delay="50">
-        <i class="fab fa-github"></i>
-    </a>
-
-
-
-    <a href="mailto:jiangkuanli@163.com" class="tooltipped" target="_blank" data-tooltip="邮件联系我" data-position="top" data-delay="50">
-        <i class="fas fa-envelope-open"></i>
-    </a>
-
-
-
-
-
-
-
-    <a href="tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=2338428461" class="tooltipped" target="_blank" data-tooltip="QQ联系我: 2338428461" data-position="top" data-delay="50">
-        <i class="fab fa-qq"></i>
-    </a>
-
-
-
-
-
-    <a href="https://www.zhihu.com/people/nan-xi-lie-jiu-93" class="tooltipped" target="_blank" data-tooltip="关注我的知乎: https://www.zhihu.com/people/nan-xi-lie-jiu-93" data-position="top" data-delay="50">
-        <i class="fab fa-zhihu1">知</i>
-    </a>
-
-
-
-
-                                </div>
-                            </div>
                         </div>
-                    </div>
-
-                    <!-- Social Links (Right) -->
-                    <div class="col l4 hide-on-med-and-down" data-aos="zoom-in-left">
-                        <div class="social-link">
+                        <div class="title">Jiankuanli</div>
+                        <div class="career"></div>
+                        <!-- Social Links (Small Devices) -->
+                        <div class="social-link hide-on-large-only" data-aos="zoom-in-left">
                             
     <a href="https://github.com/Re-ljk" class="tooltipped" target="_blank" data-tooltip="访问我的GitHub" data-position="top" data-delay="50">
         <i class="fab fa-github"></i>
@@ -602,11 +593,51 @@
                         </div>
                     </div>
                 </div>
+            </div>
 
-                <!-- Content Section -->
-                <div class="card-content article-card-content">
-                    <div id="articleContent" data-aos="fade-up">
-                        <h2 id="🌟-Career"><a href="#🌟-Career" class="headerlink" title="🌟 Career:"></a>🌟 Career:</h2><p>AI Researcher | Software Engineer</p>
+            <!-- Social Links (Right) -->
+            <div class="col l4 hide-on-med-and-down" data-aos="zoom-in-left">
+                <div class="social-link">
+                    
+    <a href="https://github.com/Re-ljk" class="tooltipped" target="_blank" data-tooltip="访问我的GitHub" data-position="top" data-delay="50">
+        <i class="fab fa-github"></i>
+    </a>
+
+
+
+    <a href="mailto:jiangkuanli@163.com" class="tooltipped" target="_blank" data-tooltip="邮件联系我" data-position="top" data-delay="50">
+        <i class="fas fa-envelope-open"></i>
+    </a>
+
+
+
+
+
+
+
+    <a href="tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=2338428461" class="tooltipped" target="_blank" data-tooltip="QQ联系我: 2338428461" data-position="top" data-delay="50">
+        <i class="fab fa-qq"></i>
+    </a>
+
+
+
+
+
+    <a href="https://www.zhihu.com/people/nan-xi-lie-jiu-93" class="tooltipped" target="_blank" data-tooltip="关注我的知乎: https://www.zhihu.com/people/nan-xi-lie-jiu-93" data-position="top" data-delay="50">
+        <i class="fab fa-zhihu1">知</i>
+    </a>
+
+
+
+
+                </div>
+            </div>
+        </div>
+
+        <!-- Content Section -->
+        <div class="card-content article-card-content">
+            <div id="articleContent" data-aos="fade-up">
+                <h2 id="🌟-Career"><a href="#🌟-Career" class="headerlink" title="🌟 Career:"></a>🌟 Career:</h2><p>AI Researcher | Software Engineer</p>
 <hr>
 <h2 id="🌱-Introduction"><a href="#🌱-Introduction" class="headerlink" title="🌱 Introduction:"></a>🌱 Introduction:</h2><p>I’m currently pursuing a degree in <strong>Artificial Intelligence</strong> at <strong>Yangzhou University</strong>.<br><br>🔜 Soon graduating with an AI degree from <strong>Yangzhou University</strong>, and pursuing postgraduate studies at <strong>University of Electronic Science and Technology of China (UESTC)</strong>.<br></p>
 <hr>
@@ -618,11 +649,11 @@
 <hr>
 <p>🌍 I love contributing to <strong>open-source projects</strong> and solving <strong>real-world problems</strong>.<br><br>🚀 Always exploring cutting-edge technology and sharing knowledge.</p>
 
-                    </div>
-                </div>
+            </div>
+        </div>
 
-                <!-- Widgets Section -->
-                <style type="text/css">
+        <!-- Widgets Section -->
+        <style type="text/css">
     #posts-chart,
     #categories-chart,
     #tags-chart {
@@ -790,8 +821,8 @@
 </script>
 
 
-                
-                
+        
+        
 <div class="my-projects">
     <div class="title center-align" data-aos="zoom-in-up">
         <i class="fas fa-gift"></i>&nbsp;&nbsp;我的项目
@@ -842,10 +873,10 @@
     </div>
 </div>
 
-                
+        
 
-                
-                
+        
+        
 <div class="my-skills">
     <div class="title center-align" data-aos="zoom-in-up">
         <i class="fas fa-wrench"></i>&nbsp;&nbsp;我的技能
@@ -987,10 +1018,10 @@
 
 </div>
 
-                
+        
 
-                
-                
+        
+        
 <div id="myGallery" class="my-gallery">
     <div class="title center-align" data-aos="zoom-in-up">
         <i class="far fa-image"></i>&nbsp;&nbsp;相册
@@ -1031,9 +1062,7 @@
     });
 </script>
 
-                
-            </div>
-        </div>
+        
     </div>
 </main>
 
