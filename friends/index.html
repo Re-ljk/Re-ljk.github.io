@@ -391,6 +391,10 @@
     .friends-container {
         margin-top: -100px;
         margin-bottom: 30px;
+        background-color: #ffffff; /* 设置统一的白色背景 */
+        padding: 20px; /* 增加内边距 */
+        border-radius: 10px; /* 圆角边框让外观更柔和 */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* 添加阴影以突出背景 */
     }
     .frind-ship img {
         border-radius: 50%;
@@ -536,8 +540,8 @@
     }
 
     article .card {
-    overflow: visible !important;
-}
+        overflow: visible !important;
+    }
 </style>
 
 <main class="content">
@@ -753,13 +757,6 @@
     </div>
 </main>
 
-<script>
-    $(function () {
-        $('#friends-link').masonry({
-            itemSelector: '.friend-div'
-        });
-    });
-</script>
     <footer class="page-footer bg-color">
     <div class="container row center-align">
        <div class="Copy-right">
