@@ -464,10 +464,14 @@
         margin-bottom: 0rem !important;
     }
     .card {
-        margin: 3rem 0 1rem 0 !important;
-        background: none; /* 移除背景色 */
-        box-shadow: none; /* 移除阴影 */
-        border: none; /* 移除边框 */
+        margin: 0 !important; /* 移除外边距 */
+        padding: 0 !important; /* 移除内边距 */
+        background: none !important; /* 移除背景色 */
+        box-shadow: none !important; /* 移除阴影 */
+        border: none !important; /* 移除边框 */
+    }
+    .container {
+        padding: 0; /* 移除容器的内边距 */
     }
     .button-glow.button-caution {
         -webkit-animation-name: glowing-caution;
@@ -549,101 +553,6 @@
 
 <main class="content">
     <div class="container friends-container">
-        <div class="card">
-            <div class="card-content">
-                <div class="card-content article-card-content">
-                    <div id="articleContent" data-aos="fade-up">
-                        <div style="max-width: 900px; margin: 0 auto; font-family: 'Microsoft YaHei', Arial, sans-serif; line-height: 1.8; color: #333;">
-
-  <!-- 页面标题 -->
-  <h1 style="text-align: center; font-size: 3rem; color: #4CAF50; margin-bottom: 30px; text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);">
-    🌟 友人帐 | 共赴星辰大海
-  </h1>
-
-  <p style="text-align: center; font-size: 1.2rem; color: #666; margin-bottom: 40px;">
-    在技术的海洋中，我们因代码结缘；在文字的长河中，我们因思想共鸣。以下是值得关注的项目和友人链接，邀你一起探索！
-  </p>
-
-  <!-- 板块3：友情互动 -->
-  <section style="margin-bottom: 50px;">
-    <h2 style="font-size: 2.5rem; color: #333; margin-bottom: 30px; text-align: center; font-weight: bold; text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);">
-      💬 友情互动
-    </h2>
-    <p style="font-size: 1.2rem; color: #555; margin-bottom: 40px; text-align: center;">
-      想要交换友链？请按照以下格式留言，和我们一起分享你的网站与资源吧！🎉
-    </p>
-    <div style="max-width: 800px; margin: 0 auto; padding: 30px;">
-      <p style="font-size: 1.1rem; color: #555; line-height: 1.8; margin-bottom: 30px;">
-        如果你也有一个精彩的网站或博客，欢迎按照下面的格式填写留言，我们会将你的信息展示在我们的“友人链接”板块，一起分享给更多朋友！🎉
-      </p>
-      <p style="text-align: center; margin-top: 30px;">
-        <a href="https://www.leejk-magic.top/contact" style="background: #4CAF50; color: #fff; padding: 15px 30px; font-size: 1.2rem; border-radius: 50px; text-decoration: none; box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); transition: all 0.3s ease;">
-          点击这里留言交换友链！ ✨
-        </a>
-      </p>
-    </div>
-  </section>
-
-
-
-
-  <!-- 板块1：优秀项目推荐 -->
-  <section style="margin-bottom: 50px;">
-    <h2 style="font-size: 2rem; color: #333; margin-bottom: 20px; text-align: center; border-bottom: 2px solid #4CAF50; padding-bottom: 5px;">
-      ✨ 优秀开源项目推荐
-    </h2>
-    <p style="font-size: 1rem; color: #666; margin-bottom: 25px; text-align: center;">
-      探索来自世界各地的开源项目，它们不仅推动技术进步，也为开发者提供了无尽的灵感与帮助！
-    </p>
-    <ul style="line-height: 1.8; padding-left: 20px;">
-      <li style="margin-bottom: 15px; font-size: 1.1rem;">
-        🌟 <a href="https://github.com/vuejs/vue" target="_blank" style="color: #4CAF50; font-weight: bold; text-decoration: none;">Vue.js</a> - 进阶前端开发框架，轻量高效，适合任何规模的应用。</li>
-      <li style="margin-bottom: 15px; font-size: 1.1rem;">
-        🚀 <a href="https://github.com/tensorflow/tensorflow" target="_blank" style="color: #4CAF50; font-weight: bold; text-decoration: none;">TensorFlow</a> - Google 开源的深度学习框架，致力于简化机器学习过程。</li>
-      <li style="margin-bottom: 15px; font-size: 1.1rem;">
-        🔥 <a href="https://github.com/justjavac/awesome-wechat-weapp" target="_blank" style="color: #4CAF50; font-weight: bold; text-decoration: none;">Awesome WeChat Mini Program</a> - 汇集了关于微信小程序开发的优质资源。</li>
-      <li style="margin-bottom: 15px; font-size: 1.1rem;">
-        🌍 <a href="https://github.com/openai/gpt-3" target="_blank" style="color: #4CAF50; font-weight: bold; text-decoration: none;">OpenAI GPT-3</a> - OpenAI 的强大自然语言处理模型，开启人工智能对话新时代。</li>
-      <li style="margin-bottom: 15px; font-size: 1.1rem;">
-        💻 <a href="https://github.com/JetBrains/jetbrains-docker" target="_blank" style="color: #4CAF50; font-weight: bold; text-decoration: none;">JetBrains Docker</a> - 为开发者提供 JetBrains IDE 的容器化解决方案。</li>
-      <li style="margin-bottom: 15px; font-size: 1.1rem;">
-        🎨 <a href="https://github.com/dracula/dracula-theme" target="_blank" style="color: #4CAF50; font-weight: bold; text-decoration: none;">Dracula Theme</a> - 令人眼前一亮的代码编辑器主题。</li>
-    </ul>
-  </section>
-
-  <!-- 板块2：资源推荐 -->
-  <section style="margin-bottom: 50px;">
-    <h2 style="font-size: 2rem; color: #333; margin-bottom: 20px; text-align: center; border-bottom: 2px solid #4CAF50; padding-bottom: 5px;">
-      📚 精选资源推荐
-    </h2>
-    <p style="font-size: 1rem; color: #666; margin-bottom: 25px; text-align: center;">
-      以下是一些有助于技术成长与学习的顶尖资源，助你深入探索各个技术领域。
-    </p>
-    <ul style="line-height: 1.8; padding-left: 20px;">
-      <li style="margin-bottom: 15px; font-size: 1.1rem;">
-        💡 <a href="https://learn.microsoft.com/en-us/azure/" target="_blank" style="color: #4CAF50; font-weight: bold; text-decoration: none;">Azure 官方文档</a> - 深入理解云计算与服务。</li>
-      <li style="margin-bottom: 15px; font-size: 1.1rem;">
-        🧑‍💻 <a href="https://www.codecademy.com" target="_blank" style="color: #4CAF50; font-weight: bold; text-decoration: none;">Codecademy</a> - 提供丰富的编程语言在线学习课程。</li>
-      <li style="margin-bottom: 15px; font-size: 1.1rem;">
-        📖 <a href="https://cs231n.github.io/" target="_blank" style="color: #4CAF50; font-weight: bold; text-decoration: none;">CS231n 深度学习课程笔记</a> - 斯坦福大学的深度学习课程笔记，适合深度学习入门。</li>
-      <li style="margin-bottom: 15px; font-size: 1.1rem;">
-        📜 <a href="https://arxiv.org/" target="_blank" style="color: #4CAF50; font-weight: bold; text-decoration: none;">Arxiv</a> - 获取最新学术论文，保持技术前沿。</li>
-    </ul>
-  </section>
-
-<section>
-  <h2
-    style="font-size: 2rem; color: #333; text-align: center; margin-bottom: 20px; border-bottom: 2px solid #4CAF50; padding-bottom: 5px;">
-    🔗 友人链接
-  </h2>
-</section>
-
-</div>
-
-                    </div>
-                </div>
-            </div>
-        </div>
         <article id="friends-link">
             
             
