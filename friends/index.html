@@ -388,105 +388,56 @@
     </div>
 </div>
 <style>
-    /* 主容器样式 */
     .friends-container {
-        margin-top: -50px;
-        /* 将这里的值调整为更大的正值以向下移动 */
+        margin-top: -100px;
         margin-bottom: 30px;
-        background-color: #ffffff;
-        /* 设置统一的白色背景 */
-        padding: 20px;
-        /* 增加内边距 */
-        border-radius: 10px;
-        /* 圆角边框让外观更柔和 */
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        /* 添加阴影以突出背景 */
+        background-color: #ffffff; /* 设置统一的白色背景 */
+        padding: 20px; /* 增加内边距 */
+        border-radius: 10px; /* 圆角边框让外观更柔和 */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* 添加阴影以突出背景 */
     }
-
-    /* 恢复 card 样式的背景、阴影和边框 */
-    .card {
-        margin: 10px; /* 恢复外边距 */
-        padding: 20px; /* 恢复内边距 */
-        border-radius: 10px; /* 圆角边框 */
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* 添加阴影 */
-        background: white; /* 恢复背景色，默认白色 */
-    }
-
-    /* 恢复 card-content 样式 */
-    .card-content {
-        padding: 10px;
-        background: transparent; /* 使用透明背景 */
-        box-shadow: none; /* 无额外阴影 */
-    }
-
-    /* 针对 article-card-content 进一步优化 */
-    .article-card-content {
-        padding: 0 !important;
-        margin: 0 !important;
-        border: none !important;
-        background: none !important;
-        box-shadow: none !important;
-    }
-
-    /* 移除 articleContent 的默认样式边框或背景 */
-    #articleContent {
-        margin: 0 !important;
-        padding: 0 !important;
-        background: none !important;
-        border: none !important;
-    }
-
     .frind-ship img {
         border-radius: 50%;
     }
-
-    /* 按钮样式 */
+    /* 以下是按钮样式 */
     .frind-ship {
         padding: 10px 20px;
     }
-
     .frind-ship .title {
         display: flex;
         align-items: center;
     }
-
     .frind-ship .title div {
         color: #fff;
         padding-left: 10px;
     }
-
     .frind-ship .title img {
         width: 100px;
         height: 100px;
         flex-shrink: 0;
     }
-
     .frind-ship .title h1 {
+        /* line-height: auto; */
         line-height: 0.8rem;
         padding-bottom: 16px;
         border-bottom: 2px solid #fff;
     }
-
     .friend-button {
         display: flex;
         justify-content: center;
         margin-bottom: -27px;
     }
-
     .friend-button a {
         border-radius: 40px;
     }
-
     .friend-all .tag-post {
         margin-bottom: 30px;
     }
-
     .button-caution {
         background-color: #FF4351;
         border-color: #FF4351;
         color: #FFF;
     }
-
     .button {
         font-weight: 300;
         font-size: 16px;
@@ -501,28 +452,90 @@
         appearance: none;
         cursor: pointer;
         border: none;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
         box-sizing: border-box;
-        transition: all 0.3s;
+        -webkit-transition-property: all;
+        transition-property: all;
+        -webkit-transition-duration: .3s;
+        transition-duration: .3s;
     }
-
+    .title {
+        margin-bottom: 0rem !important;
+    }
+    .card {
+        margin: 3rem 0 1rem 0 !important;
+        background: none; /* 移除背景色 */
+        box-shadow: none; /* 移除阴影 */
+        border: none; /* 移除边框 */
+    }
+    .button-glow.button-caution {
+        -webkit-animation-name: glowing-caution;
+        animation-name: glowing-caution;
+    }
+    @-webkit-keyframes glowing-caution {
+        from {
+            -webkit-box-shadow: 0 0 0 rgba(255, 67, 81, 0.3);
+            box-shadow: 0 0 0 rgba(255, 67, 81, 0.3);
+        }
+        50% {
+            -webkit-box-shadow: 0 0 20px rgba(255, 67, 81, 0.8);
+            box-shadow: 0 0 20px rgba(255, 67, 81, 0.8);
+        }
+        to {
+            -webkit-box-shadow: 0 0 0 rgba(255, 67, 81, 0.3);
+            box-shadow: 0 0 0 rgba(255, 67, 81, 0.3);
+        }
+    }
+    @keyframes glowing-caution {
+        from {
+            -webkit-box-shadow: 0 0 0 rgba(255, 67, 81, 0.3);
+            box-shadow: 0 0 0 rgba(255, 67, 81, 0.3);
+        }
+        50% {
+            -webkit-box-shadow: 0 0 20px rgba(255, 67, 81, 0.8);
+            box-shadow: 0 0 20px rgba(255, 67, 81, 0.8);
+        }
+        to {
+            -webkit-box-shadow: 0 0 0 rgba(255, 67, 81, 0.3);
+            box-shadow: 0 0 0 rgba(255, 67, 81, 0.3);
+        }
+    }
     .button-caution:hover {
         background-color: #ff7680;
         border-color: #ff7680;
         color: #FFF;
         text-decoration: none;
     }
-
-    /* 针对 frind-card 恢复背景渐变样式 */
     .frind-card1 {
         background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
     }
-
     .frind-card2 {
         background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     }
-
     .frind-card3 {
         background-image: linear-gradient(to right, #b8cbb8 0%, #b8cbb8 0%, #b465da 0%, #cf6cc9 33%, #ee609c 66%, #ee609c 100%);
+    }
+    .frind-card4 {
+        background-image: linear-gradient(to right, #6a11cb 0%, #2575fc 100%);
+    }
+    .frind-card5 {
+        background-image: linear-gradient(to top, #c471f5 0%, #fa71cd 100%);
+    }
+    .frind-card6 {
+        background-image: linear-gradient(to top, #48c6ef 0%, #6f86d6 100%);
+    }
+    .frind-card7 {
+        background-image: linear-gradient(to top, #0ba360 0%, #3cba92 100%);
+    }
+    .frind-card8 {
+        background-image: linear-gradient(to top, #0c3483 0%, #a2b6df 100%, #6b8cce 100%, #a2b6df 100%);
+    }
+    .frind-card9 {
+        background-image: linear-gradient(to right, #ff758c 0%, #ff7eb3 100%);
+    }
+    .frind-card10 {
+        background-image: linear-gradient(to top, #f77062 0%, #fe5196 100%);
     }
 
     .friend-introduction {
@@ -633,116 +646,116 @@
         </div>
         <article id="friends-link">
             
+            
+            <div class="row tags-posts friend-all">
                 
-                    <div class="row tags-posts friend-all">
-                        
-                            
-                                <div class="col s12 m6 l4 friend-div" data-aos="zoom-in-up">
-                                    <div class="card frind-card1">
-                                        <div class="frind-ship">
-                                            <div class="title">
-                                                <img src="/medias/avatars/myzhihu.png" alt="img">
-                                                <div>
-                                                    <h1 class="friend-name">Hexo博客搭建</h1>
-                                                    <p class="friend-introduction">我的知乎博客搭建专栏，欢迎大家关注</p>
-                                                </div>
-                                            </div>
-                                            <div class="friend-button">
-                                                <a href="https://zhuanlan.zhihu.com/c_1215655729367113728" target="_blank"
-                                                    class="button button-glow button-rounded button-caution">
-                                                    访问主页
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
+                
+                <div class="col s12 m6 l4 friend-div" data-aos="zoom-in-up">
+                    <div class="card frind-card1">
+                        <div class="frind-ship">
+                            <div class="title">
+                                <img src="/medias/avatars/myzhihu.png" alt="img">
+                                <div>
+                                    <h1 class="friend-name">Hexo博客搭建</h1>
+                                    <p class="friend-introduction">我的知乎博客搭建专栏，欢迎大家关注</p>
                                 </div>
-                                
-                            
-                                <div class="col s12 m6 l4 friend-div" data-aos="zoom-in-up">
-                                    <div class="card frind-card2">
-                                        <div class="frind-ship">
-                                            <div class="title">
-                                                <img src="/medias/avatars/csdn.ico" alt="img">
-                                                <div>
-                                                    <h1 class="friend-name">godxiaolong</h1>
-                                                    <p class="friend-introduction">我的CSDN主页，欢迎大家关注！</p>
-                                                </div>
-                                            </div>
-                                            <div class="friend-button">
-                                                <a href="https://blog.csdn.net/weixin_45682081" target="_blank"
-                                                    class="button button-glow button-rounded button-caution">
-                                                    访问主页
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                
-                            
-                                <div class="col s12 m6 l4 friend-div" data-aos="zoom-in-up">
-                                    <div class="card frind-card3">
-                                        <div class="frind-ship">
-                                            <div class="title">
-                                                <img src="https://blog.cyfan.top/pic/BLOGER.jpg" alt="img">
-                                                <div>
-                                                    <h1 class="friend-name">陈YF的博客</h1>
-                                                    <p class="friend-introduction">一个在互联网角落挣扎的小小博客，很小很小。</p>
-                                                </div>
-                                            </div>
-                                            <div class="friend-button">
-                                                <a href="https://blog.cyfan.top" target="_blank"
-                                                    class="button button-glow button-rounded button-caution">
-                                                    访问主页
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                
-                            
-                                <div class="col s12 m6 l4 friend-div" data-aos="zoom-in-up">
-                                    <div class="card frind-card4">
-                                        <div class="frind-ship">
-                                            <div class="title">
-                                                <img src="https://my-markdown-picbed.oss-cn-qingdao.aliyuncs.com/DylanBlog/logo2.jpg" alt="img">
-                                                <div>
-                                                    <h1 class="friend-name">DylanLi</h1>
-                                                    <p class="friend-introduction">人在少年，梦中不觉，醒后要归去。</p>
-                                                </div>
-                                            </div>
-                                            <div class="friend-button">
-                                                <a href="https://cloudguest.cn" target="_blank"
-                                                    class="button button-glow button-rounded button-caution">
-                                                    前去学习
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                
-                            
-                                <div class="col s12 m6 l4 friend-div" data-aos="zoom-in-up">
-                                    <div class="card frind-card5">
-                                        <div class="frind-ship">
-                                            <div class="title">
-                                                <img src="https://www.mobaijun.com/medias/avatar.jpg" alt="img">
-                                                <div>
-                                                    <h1 class="friend-name">框架师</h1>
-                                                    <p class="friend-introduction">墨白</p>
-                                                </div>
-                                            </div>
-                                            <div class="friend-button">
-                                                <a href="https://www.mobaijun.com" target="_blank"
-                                                    class="button button-glow button-rounded button-caution">
-                                                    前去学习
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                
+                            </div>
+                            <div class="friend-button">
+                                <a href="https://zhuanlan.zhihu.com/c_1215655729367113728" target="_blank"
+                                    class="button button-glow button-rounded button-caution">
+                                    访问主页
+                                </a>
+                            </div>
+                        </div>
                     </div>
-                    
+                </div>
+                
+                
+                <div class="col s12 m6 l4 friend-div" data-aos="zoom-in-up">
+                    <div class="card frind-card2">
+                        <div class="frind-ship">
+                            <div class="title">
+                                <img src="/medias/avatars/csdn.ico" alt="img">
+                                <div>
+                                    <h1 class="friend-name">godxiaolong</h1>
+                                    <p class="friend-introduction">我的CSDN主页，欢迎大家关注！</p>
+                                </div>
+                            </div>
+                            <div class="friend-button">
+                                <a href="https://blog.csdn.net/weixin_45682081" target="_blank"
+                                    class="button button-glow button-rounded button-caution">
+                                    访问主页
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                
+                <div class="col s12 m6 l4 friend-div" data-aos="zoom-in-up">
+                    <div class="card frind-card3">
+                        <div class="frind-ship">
+                            <div class="title">
+                                <img src="https://blog.cyfan.top/pic/BLOGER.jpg" alt="img">
+                                <div>
+                                    <h1 class="friend-name">陈YF的博客</h1>
+                                    <p class="friend-introduction">一个在互联网角落挣扎的小小博客，很小很小。</p>
+                                </div>
+                            </div>
+                            <div class="friend-button">
+                                <a href="https://blog.cyfan.top" target="_blank"
+                                    class="button button-glow button-rounded button-caution">
+                                    访问主页
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                
+                <div class="col s12 m6 l4 friend-div" data-aos="zoom-in-up">
+                    <div class="card frind-card4">
+                        <div class="frind-ship">
+                            <div class="title">
+                                <img src="https://my-markdown-picbed.oss-cn-qingdao.aliyuncs.com/DylanBlog/logo2.jpg" alt="img">
+                                <div>
+                                    <h1 class="friend-name">DylanLi</h1>
+                                    <p class="friend-introduction">人在少年，梦中不觉，醒后要归去。</p>
+                                </div>
+                            </div>
+                            <div class="friend-button">
+                                <a href="https://cloudguest.cn" target="_blank"
+                                    class="button button-glow button-rounded button-caution">
+                                    前去学习
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                
+                <div class="col s12 m6 l4 friend-div" data-aos="zoom-in-up">
+                    <div class="card frind-card5">
+                        <div class="frind-ship">
+                            <div class="title">
+                                <img src="https://www.mobaijun.com/medias/avatar.jpg" alt="img">
+                                <div>
+                                    <h1 class="friend-name">框架师</h1>
+                                    <p class="friend-introduction">墨白</p>
+                                </div>
+                            </div>
+                            <div class="friend-button">
+                                <a href="https://www.mobaijun.com" target="_blank"
+                                    class="button button-glow button-rounded button-caution">
+                                    前去学习
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            
         </article>
     </div>
 </main>
