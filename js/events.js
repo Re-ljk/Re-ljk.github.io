@@ -83,6 +83,10 @@ Fluid.events = {
     if (board.length === 0) {
       return;
     }
+    var arrowUpIcon = jQuery('#scroll-top-button i');
+    if(arrowUpIcon.length === 0){
+      return;
+    } 
     var posDisplay = false;
     var scrollDisplay = false;
     // Position
@@ -92,8 +96,13 @@ Fluid.events = {
       var right = bodyWidth - boardRight;
       posDisplay = right >= 50;
       topArrow.css({
-        'bottom': posDisplay && scrollDisplay ? '20px' : '-60px',
-        'right' : right - 64 + 'px'
+        'bottom': scrollDisplay ? '20px' : '-60px',
+        'right' : posDisplay ? right - 64 : 8 + 'px',
+        'min-width' : posDisplay ? 40 : 28 + 'px',
+        'min-height' : posDisplay ? 40 : 28 + 'px'
+      });
+      arrowUpIcon.css({
+        'font-size' : posDisplay ? 32 : 20 + 'px'
       });
     };
     setTopArrowPos();
@@ -104,7 +113,7 @@ Fluid.events = {
       var scrollHeight = document.body.scrollTop + document.documentElement.scrollTop;
       scrollDisplay = scrollHeight >= headerHeight;
       topArrow.css({
-        'bottom': posDisplay && scrollDisplay ? '20px' : '-60px'
+        'bottom': scrollDisplay ? '20px' : '-60px'
       });
     });
     // Click
@@ -125,7 +134,7 @@ Fluid.events = {
       var url = src.match(/\((.*?)\)/)[1].replace(/(['"])/g, '');
       var img = new Image();
       img.onload = function() {
-        window.NProgress && window.NProgress.status !== null && window.NProgress.inc(0.2);
+        window.NProgress && window.NProgress.inc(0.2);
       };
       img.src = url;
       if (img.complete) { img.onload(); }
@@ -137,7 +146,7 @@ Fluid.events = {
       const old = img.onload;
       img.onload = function() {
         old && old();
-        window.NProgress && window.NProgress.status !== null && window.NProgress.inc(0.5 / total);
+        window.NProgress && window.NProgress.inc(0.5 / total);
       };
       if (img.complete) { img.onload(); }
     }
@@ -166,19 +175,27 @@ Fluid.events = {
     }
     // eslint-disable-next-line no-console
     console.log(`
--------------------------------------------------
-|                                               |
-|      ________  __            _        __      |
-|     |_   __  |[  |          (_)      |  ]     |
-|       | |_ \\_| | | __   _   __   .--.| |      |
-|       |  _|    | |[  | | | [  |/ /'\`\\' |      |
-|      _| |_     | | | \\_/ |, | || \\__/  |      |
-|     |_____|   [___]'.__.'_/[___]'.__.;__]     |
-|                                               |
-|            Powered by Hexo x Fluid            |
-| https://github.com/fluid-dev/hexo-theme-fluid |
-|                                               |
--------------------------------------------------
+    ██ ▄█▀▓█████ ██▒   █▓ ██▓ ███▄    █ ██▓  ██████ 
+    ██▄█▒ ▓█   ▀▓██░   █▒▓██▒ ██ ▀█   █ █▒▒▒██    ▒ 
+   ▓███▄░ ▒███   ▓██  █▒░▒██▒▓██  ▀█ ██▒▓░ ░ ▓██▄   
+   ▓██ █▄ ▒▓█  ▄  ▒██ █░░░██░▓██▒  ▐▌██▒▒░   ▒   ██▒
+   ▒██▒ █▄░▒████▒  ▒▀█░  ░██░▒██░   ▓██░▒░▒██████▒▒
+   ▒ ▒▒ ▓▒░░ ▒░ ░  ░ ▐░  ░▓  ░ ▒░   ▒ ▒ ░  ▒ ▒▓▒ ▒ ░
+   ░ ░▒ ▒░ ░ ░  ░  ░ ░░   ▒ ░░ ░░   ░ ▒░   ░ ░▒  ░ ░
+   ░ ░░ ░    ░       ░░   ▒ ░   ░   ░ ░    ░  ░  ░  
+   ░  ░      ░  ░     ░   ░           ░          ░  
+                     ░                                    
+    ▄▄▄▄    ██▓     ▒█████    ▄████                       
+   ▓█████▄ ▓██▒    ▒██▒  ██▒ ██▒ ▀█▒                            
+   ▒██▒ ▄██▒██░    ▒██░  ██▒▒██░▄▄▄░                            
+   ▒██░█▀  ▒██░    ▒██   ██░░▓█  ██▓                            
+   ░▓█  ▀█▓░██████▒░ ████▓▒░░▒▓███▀▒                            
+   ░▒▓███▀▒░ ▒░▓  ░░ ▒░▒░▒░  ░▒   ▒                             
+   ▒░▒   ░ ░ ░ ▒  ░  ░ ▒ ▒░   ░   ░                             
+    ░    ░   ░ ░   ░ ░ ░ ▒  ░ ░   ░                             
+    ░          ░  ░    ░ ░        ░                             
+         ░                                                                  
+                          👉🏻: https://blog.kevinchu.top
     `);
   }
 };

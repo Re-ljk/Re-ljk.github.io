@@ -80,7 +80,119 @@
 
 
   
-<meta name="generator" content="Hexo 7.3.0"></head>
+<meta name="generator" content="Hexo 7.3.0"><style>mjx-container[jax="SVG"] {
+  direction: ltr;
+}
+
+mjx-container[jax="SVG"] > svg {
+  overflow: visible;
+}
+
+mjx-container[jax="SVG"][display="true"] {
+  display: block;
+  text-align: center;
+  margin: 1em 0;
+}
+
+mjx-container[jax="SVG"][justify="left"] {
+  text-align: left;
+}
+
+mjx-container[jax="SVG"][justify="right"] {
+  text-align: right;
+}
+
+g[data-mml-node="merror"] > g {
+  fill: red;
+  stroke: red;
+}
+
+g[data-mml-node="merror"] > rect[data-background] {
+  fill: yellow;
+  stroke: none;
+}
+
+g[data-mml-node="mtable"] > line[data-line] {
+  stroke-width: 70px;
+  fill: none;
+}
+
+g[data-mml-node="mtable"] > rect[data-frame] {
+  stroke-width: 70px;
+  fill: none;
+}
+
+g[data-mml-node="mtable"] > .mjx-dashed {
+  stroke-dasharray: 140;
+}
+
+g[data-mml-node="mtable"] > .mjx-dotted {
+  stroke-linecap: round;
+  stroke-dasharray: 0,140;
+}
+
+g[data-mml-node="mtable"] > svg {
+  overflow: visible;
+}
+
+[jax="SVG"] mjx-tool {
+  display: inline-block;
+  position: relative;
+  width: 0;
+  height: 0;
+}
+
+[jax="SVG"] mjx-tool > mjx-tip {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+mjx-tool > mjx-tip {
+  display: inline-block;
+  padding: .2em;
+  border: 1px solid #888;
+  font-size: 70%;
+  background-color: #F8F8F8;
+  color: black;
+  box-shadow: 2px 2px 5px #AAAAAA;
+}
+
+g[data-mml-node="maction"][data-toggle] {
+  cursor: pointer;
+}
+
+mjx-status {
+  display: block;
+  position: fixed;
+  left: 1em;
+  bottom: 1em;
+  min-width: 25%;
+  padding: .2em .4em;
+  border: 1px solid #888;
+  font-size: 90%;
+  background-color: #F8F8F8;
+  color: black;
+}
+
+foreignObject[data-mjx-xml] {
+  font-family: initial;
+  line-height: normal;
+  overflow: visible;
+}
+
+.MathJax path {
+  stroke-width: 3;
+}
+
+mjx-container[display="true"] {
+  overflow: auto hidden;
+}
+
+mjx-container[display="true"] + br {
+  display: none;
+}
+</style></head>
 
 
 <body>
@@ -604,23 +716,23 @@
     
     
       <div class="col-12 col-md-4 m-auto index-img">
-        <a href="2025/02/11/hello-world/" target="_self">
-          <img src="https://static.kevinchu.top/blog/assets/img/bg_008.jpg" srcset="/img/loading.gif" lazyload alt="Hello World">
+        <a href="2025/01/09/DPMesh/" target="_self">
+          <img src="https://static.kevinchu.top/blog/assets/img/cover_017.jpeg" srcset="/img/loading.gif" lazyload alt="论文阅读笔记——DPMesh:Exploiting Diffusion Prior for Occluded Human Mesh Recovery">
         </a>
       </div>
     
     <article class="col-12 col-md-8 mx-auto index-info">
       <h2 class="index-header">
         
-        <a href="2025/02/11/hello-world/" target="_self">
-          Hello World
+        <a href="2025/01/09/DPMesh/" target="_self">
+          论文阅读笔记——DPMesh:Exploiting Diffusion Prior for Occluded Human Mesh Recovery
         </a>
       </h2>
 
       
-      <a class="index-excerpt " href="2025/02/11/hello-world/" target="_self">
+      <a class="index-excerpt " href="2025/01/09/DPMesh/" target="_self">
         <div>
-          Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick
+          论文阅读笔记——DPMesh: Exploiting Diffusion Prior for Occluded Human Mesh Recovery 一、前言 1.1 研究背景 人体网格恢复旨在从单目或多视图图像及视频中精确估计 3D 人体姿势与形状，在电影制作、游戏开发和体育等领域具有广泛应用前景。深度学习技术的发展推动了该领域的进步，但在复杂场景中，如存在遮挡和拥挤情况时，从单目
         </div>
       </a>
 
@@ -628,12 +740,44 @@
         
           <div class="post-meta mr-3">
             <i class="iconfont icon-date"></i>
-            <time datetime="2025-02-11 16:50" pubdate>
-              2025-02-11
+            <time datetime="2025-01-09 22:20" pubdate>
+              2025-01-09
             </time>
           </div>
         
         
+          <div class="post-meta mr-3 d-flex align-items-center">
+            <i class="iconfont icon-category"></i>
+            
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="categories/%E8%AE%BA%E6%96%87%E9%98%85%E8%AF%BB/" class="category-chain-item">论文阅读</a>
+  
+  
+
+      </span>
+    
+  
+</span>
+
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="tags/Diffusion-Prior/">#Diffusion Prior</a>
+            
+              <a href="tags/%E9%81%AE%E6%8C%A1%E5%A4%84%E7%90%86/">#遮挡处理</a>
+            
+              <a href="tags/3D%E4%BA%BA%E4%BD%93%E9%87%8D%E5%BB%BA/">#3D人体重建</a>
+            
+          </div>
         
       </div>
     </article>
