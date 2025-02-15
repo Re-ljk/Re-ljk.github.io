@@ -742,28 +742,14 @@
   
     <article id="comments" lazyload>
       
-  <div id="waline"></div>
-  <script type="text/javascript">
-    Fluid.utils.loadComments('#waline', function() {
-      Fluid.utils.createCssLink('https://cdn.staticfile.org/waline/2.15.5/waline.min.css')
-      Fluid.utils.createScript('https://cdn.staticfile.org/waline/2.15.5/waline.min.js', function() {
-        var options = Object.assign(
-          {"serverURL":"https://waline.kevinchu.top","path":"window.location.pathname","meta":["nick","mail","link"],"requiredMeta":["nick"],"lang":"zh-CN","emoji":["https://cdn.jsdelivr.net/gh/walinejs/emojis/weibo"],"dark":"html[data-user-color-scheme=\"dark\"]","wordLimit":0,"pageSize":10,"locale":{"placeholder":"快找个位置随便坐^-^（填写邮箱📬可以在评论被回复后收到邮件通知哦~评论系统国内加载可能有亿点儿慢🤣，请见谅哈！）","nick":"昵称(必填)","sofa":"寂寞如雪，快来个人~"}},
-          {
-            el: '#waline',
-            path: window.location.pathname
-          }
-        )
-        Waline.init(options);
-        Fluid.utils.waitElementVisible('#waline .vcontent', () => {
-          var imgSelector = '#waline .vcontent img:not(.vemoji)';
-          Fluid.plugins.imageCaption(imgSelector);
-          Fluid.plugins.fancyBox(imgSelector);
-        })
+  <div id="lv-container" data-id="city" data-uid="MTAyMC82MDMzOS8zNjgwOQ==">
+    <script type="text/javascript">
+      Fluid.utils.loadComments('#lv-container', function() {
+        Fluid.utils.createScript('https://cdn-city.livere.com/js/embed.dist.js');
       });
-    });
-  </script>
-  <noscript>Please enable JavaScript to view the comments</noscript>
+    </script>
+    <noscript>Please enable JavaScript to view the comments</noscript>
+  </div>
 
 
     </article>
@@ -848,7 +834,7 @@
 
   
     <div class="footer-content">
-       Powered by&nbsp;<a href="https://www.aliyun.com/" target="_blank" rel="nofollow noopener"><img src="https://img.alicdn.com/tfs/TB1Z8HqHqLxXK8jSspoXXbD2XXa-48-48.png" srcset="/img/loading.gif" lazyload alt="阿里云" style="width:16px;height:16px;"></a> <span>|</span> <a href="https://github.com/Re-ljk" target="_blank" rel="nofollow noopener"><img src="https://github.com/favicon.ico" srcset="/img/loading.gif" lazyload alt="GitHub" style="width:16px;height:16px;"> GitHub</a> <span>|</span> <a href="mailto:jiangkuanli@163.com" target="_blank" rel="nofollow noopener"><img src="https://th.bing.com/th/id/R.1e59129aaf96225802add8e36a8d0c9c?rik=Bz1rlpLFPYkysw&riu=http%3a%2f%2fwww.kuaipng.com%2fUploads%2fpic%2fw%2f2021%2f11-15%2f112960%2fwater_112960_698_698_.png&ehk=wSpe89krtTHn9HKwqS1PMydG3ZDn7ovUh%2fNJTQ08Eq0%3d&risl=&pid=ImgRaw&r=0" srcset="/img/loading.gif" lazyload alt="Email" style="width:16px;height:16px;"> Email</a> <span>|</span> <a href="https://www.zhihu.com/people/nan-xi-lie-jiu-93" target="_blank" rel="nofollow noopener"><img src="https://www.zhihu.com/favicon.ico" srcset="/img/loading.gif" lazyload alt="Zhihu" style="width:16px;height:16px;"> Zhihu</a> <span>|</span> <a href="https://qq.com/2338428461" target="_blank" rel="nofollow noopener"><img src="https://th.bing.com/th/id/OIP.ZSQm3-OzYf4bCNEUbwzYuwHaHa?rs=1&pid=ImgDetMain" srcset="/img/loading.gif" lazyload alt="QQ" style="width:16px;height:16px;"> QQ</a> 
+       <a href="https://github.com/Re-ljk" target="_blank" rel="nofollow noopener"> <img src="https://github.com/favicon.ico" srcset="/img/loading.gif" lazyload alt="GitHub" style="width:16px;height:16px;"> GitHub </a> <span>|</span> <a href="mailto:jiangkuanli@163.com" target="_blank" rel="nofollow noopener"> <img src="https://th.bing.com/th/id/R.1e59129aaf96225802add8e36a8d0c9c?rik=Bz1rlpLFPYkysw&riu=http%3a%2f%2fwww.kuaipng.com%2fUploads%2fpic%2fw%2f2021%2f11-15%2f112960%2fwater_112960_698_698_.png&ehk=wSpe89krtTHn9HKwqS1PMydG3ZDn7ovUh%2fNJTQ08Eq0%3d&risl=&pid=ImgRaw&r=0" srcset="/img/loading.gif" lazyload alt="Email" style="width:16px;height:16px;"> Email </a> <span>|</span> <a href="https://www.zhihu.com/people/nan-xi-lie-jiu-93" target="_blank" rel="nofollow noopener"> <img src="https://www.zhihu.com/favicon.ico" srcset="/img/loading.gif" lazyload alt="Zhihu" style="width:16px;height:16px;"> Zhihu </a> 
     </div>
   
   
