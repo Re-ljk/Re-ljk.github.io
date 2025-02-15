@@ -16,16 +16,28 @@
   <meta name="author" content="Jiankuanli">
   <meta name="keywords" content="记录学习">
   
-    <meta name="description" content="论文阅读笔记——DPMesh: Exploiting Diffusion Prior for Occluded Human Mesh Recovery 一、前言 1.1 研究背景 人体网格恢复旨在从单目或多视图图像及视频中精确估计 3D 人体姿势与形状，在电影制作、游戏开发和体育等领域具有广泛应用前景。深度学习技术的发展推动了该领域的进步，但在复杂场景中，如存在遮挡和拥挤情况时，从单目">
+    <meta name="description" content="论文阅读笔记——DPMesh: Exploiting
+ Diffusion Prior for Occluded Human Mesh Recovery
+ 一、前言
+ 1.1
+ 研究背景
+ 人体网格恢复旨在从单目或多视图图像及视频中精确估计 3D
+ 人体姿势与形状，在电影制作、游戏开发和体育等领域具有广泛应用前景。深度学习技术的发展推动了该领域的进步，但在复杂场景中，如存在遮挡和拥挤情况时，从单目">
 <meta property="og:type" content="article">
 <meta property="og:title" content="论文阅读笔记——DPMesh:Exploiting Diffusion Prior for Occluded Human Mesh Recovery">
 <meta property="og:url" content="https://www.leejk-magic.top/2025/01/09/DPMesh/index.html">
 <meta property="og:site_name" content="Jiankuanli&#39;s Blog">
-<meta property="og:description" content="论文阅读笔记——DPMesh: Exploiting Diffusion Prior for Occluded Human Mesh Recovery 一、前言 1.1 研究背景 人体网格恢复旨在从单目或多视图图像及视频中精确估计 3D 人体姿势与形状，在电影制作、游戏开发和体育等领域具有广泛应用前景。深度学习技术的发展推动了该领域的进步，但在复杂场景中，如存在遮挡和拥挤情况时，从单目">
+<meta property="og:description" content="论文阅读笔记——DPMesh: Exploiting
+ Diffusion Prior for Occluded Human Mesh Recovery
+ 一、前言
+ 1.1
+ 研究背景
+ 人体网格恢复旨在从单目或多视图图像及视频中精确估计 3D
+ 人体姿势与形状，在电影制作、游戏开发和体育等领域具有广泛应用前景。深度学习技术的发展推动了该领域的进步，但在复杂场景中，如存在遮挡和拥挤情况时，从单目">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://static.kevinchu.top/blog/assets/img/cover_017.jpeg">
 <meta property="article:published_time" content="2025-01-09T14:20:35.000Z">
-<meta property="article:modified_time" content="2025-02-15T10:33:08.998Z">
+<meta property="article:modified_time" content="2025-02-15T10:34:29.097Z">
 <meta property="article:author" content="Jiankuanli">
 <meta property="article:tag" content="Diffusion Prior">
 <meta property="article:tag" content="遮挡处理">
@@ -675,7 +687,7 @@ Diffusion Prior for Occluded Human Mesh Recovery</span></b></h1>
 <h1 id="二研究方法"><b><span style="color:rgba(14, 165, 233, 1)">二、研究方法</span></b></h1>
 <h2 id="总体框架分析"><b><span style="color:rgba(14, 165, 233, 1)">2.1
 总体框架分析</span></b></h2>
-<p><img src="DPMesh/1.jpg" srcset="/img/loading.gif" lazyload></p>
+<p><img src="1.jpg" srcset="/img/loading.gif" lazyload></p>
 <h3 id="输入阶段"><b><span style="color:rgba(217,70,239,1)">1.输入阶段</span></b></h3>
 <ul>
 <li>输入图像首先进入系统，同时结合<b><span style="color:rgba(244,63,94,1)">预检测的 2D 关键点</span></b> <span class="math inline"><mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.339ex;" xmlns="http://www.w3.org/2000/svg" width="3.568ex" height="1.885ex" role="img" focusable="false" viewBox="0 -683 1577 833"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="msub"><g data-mml-node="mi"><path data-c="1D43D" d="M447 625Q447 637 354 637H329Q323 642 323 645T325 664Q329 677 335 683H352Q393 681 498 681Q541 681 568 681T605 682T619 682Q633 682 633 672Q633 670 630 658Q626 642 623 640T604 637Q552 637 545 623Q541 610 483 376Q420 128 419 127Q397 64 333 21T195 -22Q137 -22 97 8T57 88Q57 130 80 152T132 174Q177 174 182 130Q182 98 164 80T123 56Q115 54 115 53T122 44Q148 15 197 15Q235 15 271 47T324 130Q328 142 387 380T447 625Z"></path></g><g data-mml-node="TeXAtom" transform="translate(588,-150) scale(0.707)" data-mjx-texclass="ORD"><g data-mml-node="mn"><path data-c="32" d="M109 429Q82 429 66 447T50 491Q50 562 103 614T235 666Q326 666 387 610T449 465Q449 422 429 383T381 315T301 241Q265 210 201 149L142 93L218 92Q375 92 385 97Q392 99 409 186V189H449V186Q448 183 436 95T421 3V0H50V19V31Q50 38 56 46T86 81Q115 113 136 137Q145 147 170 174T204 211T233 244T261 278T284 308T305 340T320 369T333 401T340 431T343 464Q343 527 309 573T212 619Q179 619 154 602T119 569T109 550Q109 549 114 549Q132 549 151 535T170 489Q170 464 154 447T109 429Z"></path></g><g data-mml-node="mi" transform="translate(500,0)"><path data-c="1D437" d="M287 628Q287 635 230 637Q207 637 200 638T193 647Q193 655 197 667T204 682Q206 683 403 683Q570 682 590 682T630 676Q702 659 752 597T803 431Q803 275 696 151T444 3L430 1L236 0H125H72Q48 0 41 2T33 11Q33 13 36 25Q40 41 44 43T67 46Q94 46 127 49Q141 52 146 61Q149 65 218 339T287 628ZM703 469Q703 507 692 537T666 584T629 613T590 629T555 636Q553 636 541 636T512 636T479 637H436Q392 637 386 627Q384 623 313 339T242 52Q242 48 253 48T330 47Q335 47 349 47T373 46Q499 46 581 128Q617 164 640 212T683 339T703 469Z"></path></g></g></g></g></g></svg></mjx-container></span>和<b><span style="color:rgba(244,63,94,1)">生成的热图</span></b><span class="math inline"><mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.339ex;" xmlns="http://www.w3.org/2000/svg" width="4.192ex" height="1.885ex" role="img" focusable="false" viewBox="0 -683 1853 833"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="msub"><g data-mml-node="mi"><path data-c="1D43B" d="M228 637Q194 637 192 641Q191 643 191 649Q191 673 202 682Q204 683 219 683Q260 681 355 681Q389 681 418 681T463 682T483 682Q499 682 499 672Q499 670 497 658Q492 641 487 638H485Q483 638 480 638T473 638T464 637T455 637Q416 636 405 634T387 623Q384 619 355 500Q348 474 340 442T328 395L324 380Q324 378 469 378H614L615 381Q615 384 646 504Q674 619 674 627T617 637Q594 637 587 639T580 648Q580 650 582 660Q586 677 588 679T604 682Q609 682 646 681T740 680Q802 680 835 681T871 682Q888 682 888 672Q888 645 876 638H874Q872 638 869 638T862 638T853 637T844 637Q805 636 794 634T776 623Q773 618 704 340T634 58Q634 51 638 51Q646 48 692 46H723Q729 38 729 37T726 19Q722 6 716 0H701Q664 2 567 2Q533 2 504 2T458 2T437 1Q420 1 420 10Q420 15 423 24Q428 43 433 45Q437 46 448 46H454Q481 46 514 49Q520 50 522 50T528 55T534 64T540 82T547 110T558 153Q565 181 569 198Q602 330 602 331T457 332H312L279 197Q245 63 245 58Q245 51 253 49T303 46H334Q340 38 340 37T337 19Q333 6 327 0H312Q275 2 178 2Q144 2 115 2T69 2T48 1Q31 1 31 10Q31 12 34 24Q39 43 44 45Q48 46 59 46H65Q92 46 125 49Q139 52 144 61Q147 65 216 339T285 628Q285 635 228 637Z"></path></g><g data-mml-node="TeXAtom" transform="translate(864,-150) scale(0.707)" data-mjx-texclass="ORD"><g data-mml-node="mn"><path data-c="32" d="M109 429Q82 429 66 447T50 491Q50 562 103 614T235 666Q326 666 387 610T449 465Q449 422 429 383T381 315T301 241Q265 210 201 149L142 93L218 92Q375 92 385 97Q392 99 409 186V189H449V186Q448 183 436 95T421 3V0H50V19V31Q50 38 56 46T86 81Q115 113 136 137Q145 147 170 174T204 211T233 244T261 278T284 308T305 340T320 369T333 401T340 431T343 464Q343 527 309 573T212 619Q179 619 154 602T119 569T109 550Q109 549 114 549Q132 549 151 535T170 489Q170 464 154 447T109 429Z"></path></g><g data-mml-node="mi" transform="translate(500,0)"><path data-c="1D437" d="M287 628Q287 635 230 637Q207 637 200 638T193 647Q193 655 197 667T204 682Q206 683 403 683Q570 682 590 682T630 676Q702 659 752 597T803 431Q803 275 696 151T444 3L430 1L236 0H125H72Q48 0 41 2T33 11Q33 13 36 25Q40 41 44 43T67 46Q94 46 127 49Q141 52 146 61Q149 65 218 339T287 628ZM703 469Q703 507 692 537T666 584T629 613T590 629T555 636Q553 636 541 636T512 636T479 637H436Q392 637 386 627Q384 623 313 339T242 52Q242 48 253 48T330 47Q335 47 349 47T373 46Q499 46 581 128Q617 164 640 212T683 339T703 469Z"></path></g></g></g></g></g></svg></mjx-container></span> 。这些 2D
@@ -1018,14 +1030,17 @@ NKR 后性能有轻微提升，证实了 NKR 能够减少噪声 2D
 <li>在 3DPW 数据集中，DPMesh 在挑战性遮挡下能恢复准确人体网格，对 3D
 身体结构和空间关系理解深刻，能还原被遮挡人物的身体姿态和形状，并为被遮挡的手部和腿部等部位生成合理细节，证明其在复杂场景中的有效性和稳定性。</li>
 </ul>
-<p><img src="DPMesh/2.jpg" srcset="/img/loading.gif" lazyload> &gt; - 在 3DOH 数据集上，DPMesh
-对复杂姿势估计效果良好，能准确推断出被遮挡部分的人体网格，使姿势估计更完整合理，展示了其处理复杂遮挡情况的能力。</p>
-<p><img src="DPMesh/3.jpg" srcset="/img/loading.gif" lazyload> &gt;</p>
+<p><img src="2.jpg" srcset="/img/loading.gif" lazyload></p>
+<ul>
+<li>在 3DOH 数据集上，DPMesh
+对复杂姿势估计效果良好，能准确推断出被遮挡部分的人体网格，使姿势估计更完整合理，展示了其处理复杂遮挡情况的能力。</li>
+</ul>
+<p><img src="3.jpg" srcset="/img/loading.gif" lazyload></p>
 <ul>
 <li>以男性被女性部分遮挡为例，DPMesh
 生成的交叉注意力图能精确捕捉空间关系，区分被遮挡和遮挡目标，表明模型能利用扩散先验知识识别遮挡情况，为恢复被遮挡人体网格提供有力支持。</li>
 </ul>
-<p><img src="DPMesh/4.jpg" srcset="/img/loading.gif" lazyload> &gt; &gt;</p>
+<p><img src="4.jpg" srcset="/img/loading.gif" lazyload></p>
 <h1 id="四研究贡献与局限"><b><span style="color:rgba(14, 165, 233, 1)">四、研究贡献与局限</span></b></h1>
 <h2 id="研究贡献"><span style="color:rgba(217,70,239,1)">4.1
 研究贡献</span></h2>
