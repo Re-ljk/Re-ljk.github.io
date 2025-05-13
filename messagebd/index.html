@@ -16,12 +16,12 @@
   <meta name="author" content="Jiankuanli">
   <meta name="keywords" content="记录学习">
   
-    <meta name="description" content=".page-content, .post-content {     overflow: hidden; }  .widget-border {     display: flex;       flex-wrap: wrap;     justify-content: center;       }  .widget-item {     max-width: 180px; }       �">
+    <meta name="description" content=".page-content, .post-content {     overflow: hidden; }  .widget-border {     display: flex;       flex-wrap: wrap;     justify-content: center;       }  .widget-item {     max-width: 180">
 <meta property="og:type" content="website">
 <meta property="og:title" content="留言板">
 <meta property="og:url" content="https://www.leejk-magic.top/messagebd/index.html">
 <meta property="og:site_name" content="Jiankuanli&#39;s Blog">
-<meta property="og:description" content=".page-content, .post-content {     overflow: hidden; }  .widget-border {     display: flex;       flex-wrap: wrap;     justify-content: center;       }  .widget-item {     max-width: 180px; }       �">
+<meta property="og:description" content=".page-content, .post-content {     overflow: hidden; }  .widget-border {     display: flex;       flex-wrap: wrap;     justify-content: center;       }  .widget-item {     max-width: 180">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2025-02-15T14:49:05.993Z">
 <meta property="article:modified_time" content="2025-02-15T14:49:05.993Z">
@@ -486,23 +486,28 @@
     max-width: 180px;
 }
 </style>
-
 <script src="https://static.kevinchu.top/blog/assets/js/sakura-weak.js"></script>
-
-<link
+<p><link
   rel="stylesheet"
   href="https://static.kevinchu.top/blog/assets/css/sakana-widget-2.7.0.css"
-/>
-
-<p style="text-align: center;">🍺欢迎！快来说点什么吧~</p>
-
+/></p>
+<p style="text-align: center;">
+🍺欢迎！快来说点什么吧~
+</p>
 <div class="widget-border">
-<div id="pokemon-pikachu-widget" class="widget-item"></div>
-<div id="pokemon-psyduck-widget" class="widget-item"></div>
-<div id="pokemon-slowpoke-widget" class="widget-item"></div>
-<div id="pokemon-bulbasaur-widget" class="widget-item"></div>
-</div>
+<div id="pokemon-pikachu-widget" class="widget-item">
 
+</div>
+<div id="pokemon-psyduck-widget" class="widget-item">
+
+</div>
+<div id="pokemon-slowpoke-widget" class="widget-item">
+
+</div>
+<div id="pokemon-bulbasaur-widget" class="widget-item">
+
+</div>
+</div>
 <script>
   function initSakanaWidget() {
     const map = new Map([
@@ -527,7 +532,7 @@
     map.forEach((val,key) => {
         registerSakana(key,val);
     })
-
+    
     new SakanaWidget({ character: 'pokemon-pikachu', controls: false, rod: false }).mount('#pokemon-pikachu-widget');
     new SakanaWidget({ character: 'pokemon-psyduck', controls: false, rod: false }).mount('#pokemon-psyduck-widget');
     new SakanaWidget({ character: 'pokemon-slowpoke', controls: false, rod: false }).mount('#pokemon-slowpoke-widget');
@@ -535,7 +540,6 @@
 
   }
 </script>
-
 <script
   async
   onload="initSakanaWidget()"
