@@ -17,15 +17,8 @@
 #---------------------------
 
 
-# 用于浏览器标签的图标
-# Icon for browser tab
-favicon: /medias/avatar.jpg
 
-# 用于苹果设备的图标
-# Icon for Apple touch
-apple_touch_icon: /medias/avatar.jpg
-
-# 浏览器标签页中的标题分隔符，效果： 文章名 - 站点名
+# 浏览器标签页中的标题分隔符，效果：文章名 - 站点名
 # Title separator in browser tab, eg: article - site
 tab_title_separator: " - "
 
@@ -64,8 +57,8 @@ code:
       # 在链接中挑选 style 填入
       # Select a style in the link
       # See: https://highlightjs.org/static/demo/
-      style: "github gist"
-      style_dark: "dark"
+      style: "github dark dimmed"
+      style_dark: "github dark"
 
     prismjs:
       # 在下方链接页面右侧的圆形按钮挑选 style 填入，也可以直接填入 css 链接
@@ -110,8 +103,10 @@ fun_features:
     element: h1,h2,h3,h4,h5,h6
     # Options: left | right
     placement: left
-    # Options: hover | always | touch
+
+    # Options: hover | always
     visible: hover
+
     # Options: § | # | ❡
     icon: ""
 
@@ -120,7 +115,7 @@ fun_features:
   progressbar:
     enable: true
     height_px: 3
-    color: "#29d"
+    color: "#5298F4"
     # See: https://github.com/rstacruz/nprogress
     options: { showSpinner: false, trickleSpeed: 100 }
 
@@ -129,7 +124,7 @@ fun_features:
 dark_mode:
   enable: true
   # 默认的选项（当用户手动切换后则不再按照默认模式），选择 `auto` 会优先遵循 prefers-color-scheme，其次按用户本地时间 18 点到次日 6 点之间进入暗色模式
-  # Default option (when the visitor switches manually, the default mode is no longer followed), choosing `auto` will give priority to prefers-color-scheme, and then enter the dark mode from 18:00 to 6:00 in the visitor’s local time
+  # Default option (when the visitor switches manually, the default mode is no longer followed), choosing `auto` will give priority to prefers-color-scheme, and then enter the dark mode from 18:00 to 6:00 in the visitor's local time
   # Options: auto | light | dark
   default: auto
 
@@ -146,7 +141,7 @@ color:
 
   # 顶部菜单背景色
   # Color of navigation bar background
-  navbar_bg_color: "#2f4154"
+  navbar_bg_color: "#3C4858DA"
   navbar_bg_color_dark: "#1f3144"
 
   # 顶部菜单字体色
@@ -186,13 +181,13 @@ color:
 
   # 文章超链接字体色
   # Color of post link
-  post_link_color: "#0366d6"
-  post_link_color_dark: "#1589e9"
+  post_link_color: "#0463E0"
+  post_link_color_dark: "#5298F4"
 
   # 超链接悬浮时字体色
   # Color of link when hovering
-  link_hover_color: "#30a9de"
-  link_hover_color_dark: "#30a9de"
+  link_hover_color: "#5298F4"
+  link_hover_color_dark: "#71ADFC"
 
   # 超链接悬浮背景色
   # Color of link background when hovering
@@ -233,14 +228,22 @@ font:
 # 指定自定义 .js 文件路径，支持列表；路径是相对 source 目录，如 /js/custom.js 对应存放目录 source/js/custom.js
 # Specify the path of your custom js file, support list. The path is relative to the source directory, such as `/js/custom.js` corresponding to the directory `source/js/custom.js`
 custom_js:
+  # 小星星特效
+  - https://static.kevinchu.top/blog/assets/js/stars.js
+  # 打字礼花特效
+  - https://static.kevinchu.top/blog/assets/js/typing-effect.js
 
+
+# 指定自定义 .css 文件路径，用法和 custom_js 相同
 # 指定自定义 .css 文件路径，用法和 custom_js 相同
 # The usage is the same as custom_js
 custom_css:
-
+  - /css/macpanel
+  - //at.alicdn.com/t/c/font_4276126_oypdem1ivsg.css
+  - https://static.kevinchu.top/blog/assets/css/waline-custom.css
 # 网页访问统计
 # Analysis of website visitors
-web_analytics:  # 网页访问统计
+web_analytics:
   enable: false
 
   # 遵循访客浏览器"请勿追踪"的设置，如果开启则不统计其访问
@@ -266,16 +269,6 @@ web_analytics:  # 网页访问统计
     sid:
     cid:
 
-  # 51.la 站点统计 ID
-  # 51.la analytics
-  # See: https://www.51.la/user/site/index
-  woyaola:  # 51.la 站点统计 ID，参见
-
-  # 友盟/cnzz 站点统计 web_id
-  # cnzz analytics
-  # See: https://web.umeng.com/main.php?c=site&a=show
-  cnzz:
-
   # LeanCloud 计数统计，可用于 PV UV 展示，如果 `web_analytics: enable` 没有开启，PV UV 展示只会查询不会增加
   # LeanCloud count statistics, which can be used for PV UV display. If `web_analytics: enable` is false, PV UV display will only query and not increase
   leancloud:
@@ -290,6 +283,40 @@ web_analytics:  # 网页访问统计
     # 开启后不统计本地路径( localhost 与 127.0.0.1 )
     # If true, ignore localhost & 127.0.0.1
     ignore_local: false
+
+  # Umami Analytics，仅支持自部署。如果要展示 PV UV 需要填写所有配置项，否则只填写 `src` 和 `website_id` 即可
+  # Umami Analytics, only Self-host support. If you want to display PV UV need to set all config items, otherwise only set 'src' and 'website_id'
+  # See: https://umami.is/docs
+  umami:
+    # umami js 文件地址，需要在 umami 后台创建站点后获取
+    # umami js file url, get after create website in umami
+    src:
+
+    # umami 的 website id，需要在 umami 后台创建站点后获取
+    # umami website id, get after create website in umami
+    website_id:
+
+    # 如果你只想统计特定的域名可以填入此字段，多个域名通过逗号分隔，这可以避免统计 localhost。
+    # If you only want to tracker to specific domains you can fill in this field, multiple domain names are separated by commas, which can avoid tracker localhost
+    domains:
+
+    # 用于统计 PV UV 的开始时间，格式为 "YYYY-MM-DD"
+    # statistics on the start time, the format is "YYYY-MM-DD"
+    start_time: 2024-01-01
+
+    # 新建一个 umami viewOnly 用户，然后通过 login api 获取该用户 token
+    # create an umami viewOnly user, and then get user token through the login api
+    token:
+
+    # 填写 umami 部署的服务器地址，如 "https://umami.example.com"
+    # server url of umami deployment, such as "https://umami.example.com"
+    api_server:
+
+# Canonical 用于向 Google 搜索指定规范网址，开启前确保 hexo _config.yml 中配置 `url: http://yourdomain.com`
+# Canonical, to specify a canonical URL for Google Search, need to set up `url: http://yourdomain.com` in hexo _config.yml
+# See: https://support.google.com/webmasters/answer/139066
+canonical:
+  enable: false
 
 # 对页面中的图片和评论插件进行懒加载处理，可见范围外的元素不会提前加载
 # Lazy loading of images and comment plugin on the page
@@ -310,7 +337,7 @@ lazyload:
 
 # 图标库，包含了大量社交类图标，主题依赖的不包含在内，因此可自行修改，详见 https://hexo.fluid-dev.com/docs/icon/
 # Icon library, which includes many social icons, does not include those theme dependent, so your can modify link by yourself. See: https://hexo.fluid-dev.com/docs/en/icon/
-iconfont: //at.alicdn.com/t/font_1736178_lbnruvf0jn.css
+iconfont: //at.alicdn.com/t/c/font_1736178_k526ubmyhba.css
 
 
 #---------------------------
@@ -323,12 +350,12 @@ iconfont: //at.alicdn.com/t/font_1736178_lbnruvf0jn.css
 navbar:
   # 导航栏左侧的标题，为空则按 hexo config 中 `title` 显示
   # The title on the left side of the navigation bar. If empty, it is based on `title` in hexo config
-  blog_title: "Fluid"
+  blog_title: "Jiangkuanli'S Blog"
 
   # 导航栏毛玻璃特效，实验性功能，可能会造成页面滚动掉帧和抖动，部分浏览器不支持会自动不生效
   # Navigation bar frosted glass special animation. It is an experimental feature
   ground_glass:
-    enable: false
+    enable: true
 
     # 模糊像素，只能为数字，数字越大模糊度越高
     # Number of blurred pixel. the larger the number, the higher the blur
@@ -337,16 +364,25 @@ navbar:
     # 不透明度，数字越大透明度越低，注意透明过度可能看不清菜单字体
     # Ratio of opacity, 1.0 is completely opaque
     # available: 0 - 1.0
-    alpha: 0.7
-
+    alpha: 0.81
   # 导航栏菜单，可自行增减，key 用来关联 languages/*.yml，如不存在关联则显示 key 本身的值；icon 是 css class，可以省略；增加 name 可以强制显示指定名称
   # Navigation bar menu. `key` is used to associate languages/*.yml. If there is no association, the value of `key` itself will be displayed; if `icon` is a css class, it can be omitted; adding `name` can force the display of the specified name
   menu:
     - { key: "home", link: "/", icon: "iconfont icon-home-fill" }
-    - { key: "archive", link: "/archives/", icon: "iconfont icon-archive-fill" }
-    - { key: "category", link: "/categories/", icon: "iconfont icon-category-fill" }
-    - { key: "tag", link: "/tags/", icon: "iconfont icon-tags-fill" }
-    - { key: "about", link: "/about/", icon: "iconfont icon-user-fill" }
+    - {
+      key: '文章',
+      icon: 'iconfont icon-books',
+      submenu: [
+        { key: "archive", link: "/archives/", icon: "iconfont icon-archive-fill" },
+        { key: "category", link: "/categories/", icon: "iconfont icon-category-fill" },
+        { key: "tag", link: "/tags/", icon: "iconfont icon-tag" }
+      ]
+    }
+
+    - { key: "links", link: "/links/", icon: "iconfont icon-link-fill", name: "友链"}
+    # - { key: "留言", link: "/messagebd/", icon: "iconfont icon-comment" }
+    - { key: "关于我", link: "/about/", icon: "iconfont icon-user-fill" }
+    
     #- { key: "links", link: "/links/", icon: "iconfont icon-link-fill" }
 
 # 搜索功能，基于 hexo-generator-search 插件，若已安装其他搜索插件请关闭此功能，以避免生成多余的索引文件
@@ -419,35 +455,38 @@ open_graph:
 #---------------------------
 footer:
   # 页脚第一行文字的 HTML，建议保留 Fluid 的链接，用于向更多人推广本主题
-  # HTML of the first line of the footer, it is recommended to keep the Fluid link to promote this theme to more people
-  content: '
-    <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a>
-    <i class="iconfont icon-love"></i>
-    <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a>
-  '
+  content: |
+    <div style="text-align: center; padding: 10px 0;">
+      <a href="https://github.com/Re-ljk" target="_blank" rel="nofollow noopener" style="text-decoration: none; margin: 0 10px; font-size: 16px; color: #333;">
+        <i class="iconfont icon-github-fill" style="font-size: 18px; margin-right: 5px;"></i> GitHub
+      </a>
+      <span>|</span>
+      <a href="mailto:jiangkuanli@163.com" target="_blank" rel="nofollow noopener" style="text-decoration: none; margin: 0 10px; font-size: 16px; color: #333;">
+        <i class="iconfont icon-mail" style="font-size: 18px; margin-right: 5px;"></i> Email
+      </a>
+      <span>|</span>
+      <a href="https://www.zhihu.com/people/nan-xi-lie-jiu-93" target="_blank" rel="nofollow noopener" style="text-decoration: none; margin: 0 10px; font-size: 16px; color: #333;">
+        <i class="iconfont icon-zhihu-fill" style="font-size: 18px; margin-right: 5px;"></i> Zhihu
+      </a>
+    </div>
+
+
+
+
 
   # 展示网站的 PV、UV 统计数
-  # Display website PV and UV statistics
   statistics:
     enable: false
-
-    # 统计数据来源，使用 leancloud 需要设置 `web_analytics: leancloud` 中的参数；使用 busuanzi 不需要额外设置，但是有时不稳定，另外本地运行时 busuanzi 显示统计数据很大属于正常现象，部署后会正常
-    # Data source. If use leancloud, you need to set the parameter in `web_analytics: leancloud`
-    # Options: busuanzi | leancloud
     source: "busuanzi"
 
   # 国内大陆服务器的备案信息
-  # For Chinese mainland website policy, other areas keep disable
   beian:
-    enable: false
-    # ICP证号
-    icp_text: 京ICP证123456号
-    # 公安备案号，不填则只显示ICP
-    police_text: 京公网安备12345678号
-    # 公安备案的编号，用于URL跳转查询
+    enable: true
+    icp_text: 苏ICP证123456号
+    police_text: 苏公网安备12345678号
     police_code: 12345678
-    # 公安备案的图片. 为空时不显示备案图片
     police_icon: /img/police_beian.png
+
 
 
 #---------------------------
@@ -458,7 +497,6 @@ index:
   # 首页 Banner 头图，可以是相对路径或绝对路径，以下相同
   # Path of Banner image, can be a relative path or an absolute path, the same on other pages
   banner_img: /img/default.png
-
   # 头图高度，屏幕百分比
   # Height ratio of banner image
   # Available: 0 - 100
@@ -467,7 +505,7 @@ index:
   # 头图黑色蒙版的不透明度，available: 0 - 1.0， 1 是完全不透明
   # Opacity of the banner mask, 1.0 is completely opaque
   # Available: 0 - 1.0
-  banner_mask_alpha: 0.3
+  banner_mask_alpha: 0.2
 
   # 首页副标题的独立设置
   # Independent config of home page subtitle
@@ -476,7 +514,7 @@ index:
 
     # 为空则按 hexo config.subtitle 显示
     # If empty, text based on `subtitle` in hexo config
-    text: "An elegant Material-Design theme for Hexo"
+    text: "小舟从此逝，江海寄余生"
 
     # 通过 API 接口作为首页副标题的内容，必须返回的是 JSON 格式，如果请求失败则按 text 字段显示，该功能必须先开启 typing 打字机功能
     # Subtitle of the homepage through the API, must be returned a JSON. If the request fails, it will be displayed in `text` value. This feature must first enable the typing animation
@@ -529,15 +567,17 @@ index:
 # Post Page
 #---------------------------
 post:
-  banner_img: /img/default.png
-  banner_img_height: 70
+  banner_img: https://static.kevinchu.top/blog/assets/img/bg_023.jpg
+  banner_img_height: 60
   banner_mask_alpha: 0.3
 
   # 文章在首页的默认封面图，当没有指定 index_img 时会使用该图片，若两者都为空则不显示任何图片
   # Path of the default post cover when `index_img` is not set. If both are empty, no image will be displayed
-  default_index_img:
+  default_index_img: https://static.kevinchu.top/blog/assets/img/bg_008.jpg
 
   # 文章标题下方的元信息
+  # Meta information below title
+    # 文章标题下方的元信息
   # Meta information below title
   meta:
     # 作者，优先根据 front-matter 里 author 字段，其次是 hexo 配置中 author 值
@@ -573,7 +613,7 @@ post:
     # 浏览量计数
     # Number of visits
     views:
-      enable: false
+      enable: true
       # 统计数据来源
       # Data Source
       # Options: busuanzi | leancloud
@@ -582,7 +622,7 @@ post:
   # 在文章开头显示文章更新时间，该时间默认是 md 文件更新时间，可通过 front-matter 中 `updated` 手动指定（和 date 一样格式）
   # Update date is displayed at the beginning of the post. The default date is the update date of the md file, which can be manually specified by `updated` in front-matter (same format as date)
   updated:
-    enable: false
+    enable: true
 
     # 格式参照 ISO-8601 日期格式化
     # ISO-8601 date format
@@ -637,7 +677,7 @@ post:
 
     # 层级的折叠深度，0 是全部折叠，大于 0 后如果存在下级标题则默认展开
     # Collapse depth. If 0, all headings collapsed. If greater than 0, it will be expanded by default if there are sub headings
-    collapseDepth: 0
+    collapseDepth: 5
 
   # 版权声明，会显示在每篇文章的结尾
   # Copyright, will be displayed at the end of each post
@@ -695,7 +735,7 @@ post:
   math:
     # 开启后文章默认可用，自定义页面如需使用，需在 Front-matter 中指定 `math: true`
     # If you want to use math on the custom page, you need to set `math: true` in Front-matter
-    enable: false
+    enable: true
 
     # 开启后，只有在文章 Front-matter 里指定 `math: true` 才会在文章页启动公式转换，以便在页面不包含公式时提高加载速度
     # If true, only set `math: true` in Front-matter will enable math, to load faster when the page does not contain math
@@ -724,8 +764,8 @@ post:
     enable: false
     # 指定的插件，需要同时设置对应插件的必要参数
     # The specified plugin needs to set the necessary parameters at the same time
-    # Options: utterances | disqus | gitalk | valine | waline | changyan | livere | remark42 | twikoo | cusdis | giscus | discuss
-    type: disqus
+    # Options: utterances | disqus | gitalk | valine | waline | changyan | livere | remark42 | twikoo | cusdis
+    type: livere
 
 
 #---------------------------
@@ -741,7 +781,7 @@ post:
 # Based on GitHub Issues
 # See: https://utteranc.es
 utterances:
-  repo:
+  repo: kevinchu7/blog-comment-utterances
   issue_term: pathname
   label: utterances
   theme: github-light
@@ -807,7 +847,7 @@ valine:
 # Derived from Valine, with self-hosted service and new features
 # See: https://waline.js.org/
 waline:
-  serverURL: ''
+  serverURL: 'https://comment-7bmq.vercel.app'
   path: window.location.pathname
   meta: ['nick', 'mail', 'link']
   requiredMeta: ['nick']
@@ -816,7 +856,11 @@ waline:
   dark: 'html[data-user-color-scheme="dark"]'
   wordLimit: 0
   pageSize: 10
-
+  locale: 
+    placeholder: '快找个位置随便坐^-^（填写邮箱📬可以在评论被回复后收到邮件通知哦~评论系统国内加载可能有亿点儿慢🤣，请见谅哈！）'
+    nick: '昵称(必填)'
+    sofa: '寂寞如雪，快来个人~'
+  
 # 畅言 Changyan
 # 基于第三方的服务
 # Based on third-party service, insufficient support for regions outside China
@@ -830,7 +874,8 @@ changyan:
 # Based on third-party service
 # See: https://www.livere.com
 livere:
-  uid: ''
+  enable: true
+  uid: MTAyMC82MDMzOS8zNjgwOQ==
 
 # Remark42
 # 需要自托管服务端
@@ -844,7 +889,7 @@ remark42:
   components: ['embed']
 
 # Twikoo
-# 支持腾讯云、Vercel、Railway 等多种平台部署
+# 基于腾讯云开发
 # Based on Tencent CloudBase
 # See: https://twikoo.js.org
 twikoo:
@@ -861,38 +906,12 @@ cusdis:
   app_id:
   lang: zh-cn
 
-# Giscus
-# 基于 GitHub Discussions，类似于 Utterances
-# Based on GitHub Discussions, similar to Utterances
-# See: https://giscus.app/
-giscus:
-  repo:
-  repo-id:
-  category:
-  category-id:
-  theme-light: light
-  theme-dark: dark
-  mapping: pathname
-  reactions-enabled: 1
-  emit-metadata: 0
-  input-position: top
-  lang: zh-CN
-
-# Discuss
-# 多平台、多数据库、自托管、免费开源评论系统
-# Self-hosted, small size, multi-platform, multi-database, free and open source commenting system
-# See: https://discuss.js.org
-discuss:
-  serverURLs:
-  path: window.location.pathname
-
-
 #---------------------------
 # 归档页
 # Archive Page
 #---------------------------
 archive:
-  banner_img: /img/default.png
+  banner_img: https://static.kevinchu.top/blog/assets/img/bg_011.jpg
   banner_img_height: 60
   banner_mask_alpha: 0.3
 
@@ -903,7 +922,7 @@ archive:
 #---------------------------
 category:
   enable: true
-  banner_img: /img/default.png
+  banner_img: https://static.kevinchu.top/blog/assets/img/bg_011.jpg
   banner_img_height: 60
   banner_mask_alpha: 0.3
 
@@ -932,35 +951,40 @@ category:
 #---------------------------
 tag:
   enable: true
-  banner_img: /img/default.png
-  banner_img_height: 80
+  banner_img: https://static.kevinchu.top/blog/assets/img/bg_011.jpg
+  banner_img_height: 60
   banner_mask_alpha: 0.3
   tagcloud:
-    min_font: 15
-    max_font: 30
+    min_font: 25
+    max_font: 50
     unit: px
-    start_color: "#BBBBEE"
-    end_color: "#337ab7"
+    start_color: "#9CC7F9"
+    end_color: "#194DD2"
 
 
 #---------------------------
 # 关于页
 # About Page
 #---------------------------
+
 about:
   enable: true
-  banner_img: /img/default.png
+  banner_img: https://static.kevinchu.top/blog/assets/img/bg_007.jpg
   banner_img_height: 60
   banner_mask_alpha: 0.3
-  avatar: /img/avatar.png
-  name: "Fluid"
-  intro: "An elegant theme for Hexo"
+  avatar: https://pic4.zhimg.com/70e811b36e536304ca1bd17724db0f1f_r.jpg
+  name: "Jiangkuanli"
+  intro: "小舟从此逝，江海寄余生🌏"
   # 更多图标可从 https://hexo.fluid-dev.com/docs/icon/ 查找，`class` 代表图标的 css class，添加 `qrcode` 后，图标不再是链接而是悬浮二维码
   # More icons can be found from https://hexo.fluid-dev.com/docs/en/icon/  `class` is the css class of the icon. If adding `qrcode`, The icon is no longer a link, but a hovering QR code
   icons:
-    - { class: "iconfont icon-github-fill", link: "https://github.com", tip: "GitHub" }
-    - { class: "iconfont icon-douban-fill", link: "https://douban.com", tip: "豆瓣" }
-    - { class: "iconfont icon-wechat-fill", qrcode: "/img/favicon.png" }
+    - { class: "iconfont icon-github-fill", link: "https://github.com/Re-ljk", tip: "GitHub" }
+    - { class: "iconfont icon-mail", link: "mailto:jiangkuanli@163.com", tip: "邮箱" }
+
+    - { class: "iconfont icon-zhihu-fill", link: "https://www.zhihu.com/people/nan-xi-lie-jiu-93", tip: "知乎" }
+    
+    # - { class: "iconfont icon-douban-fill", link: "https://douban.com", tip: "豆瓣" }
+    # - { class: "iconfont icon-wechat-fill", qrcode: "/img/favicon.png" }
 
 
 #---------------------------
@@ -990,60 +1014,110 @@ page404:
   redirect_delay: 5000
 
 
+
 #---------------------------
 # 友链页
 # Links Page
 #---------------------------
 links:
   enable: true
-  banner_img: /img/default.png
+  banner_img: https://static.kevinchu.top/blog/assets/img/bg_015.jpg
   banner_img_height: 60
   banner_mask_alpha: 0.3
-  # 友链的成员项
-  # Member item of page
+  custom:
+    enable: true
+    content: |
+      <div style="max-width: 900px; margin: 0 auto; font-family: 'Microsoft YaHei', Arial, sans-serif; line-height: 1.8; color: #333; padding: 20px;">
+
+ 
+      <!-- Title Section -->
+      <h2 style="text-align: center; font-size: 1.8rem; color: #4CAF50; margin-bottom: 30px; text-shadow: 2px 2px 15px rgba(0, 0, 0, 0.1); font-weight: bold;">
+        🌟 远道而来的朋友，你好！欢迎来到我的小窝！🌸
+      </h2>
+
+      <!-- Intro Paragraph -->
+      <p style="font-size: 1 rem; color: #555; text-align: center; margin-bottom: 40px; line-height: 1.8; padding: 0 10px;">
+        很高兴你能来到这里！这里记录着我的成长与分享。🎉<br>
+        如果你也想加入我的友链列表，欢迎留言，以下是填写模板：
+      </p>
+
+      <!-- Link Template -->
+      <div style="font-size: 1 rem; color: #555; margin-bottom: 40px; line-height: 1.8; padding: 0 10px;">
+        <h3 style="font-size: 1.2 rem; color: #333; font-weight: bold; text-align: center; margin-bottom: 20px; letter-spacing: 2px;">
+          友链提交模板：
+        </h3>
+        <ul style="list-style: none; padding-left: 0; text-align: center; font-size: 1rem;">
+          <li style="margin-bottom: 20px; padding: 5px 0; font-weight: 500;"><strong>名称：</strong> xxx博客</li>
+          <li style="margin-bottom: 20px; padding: 5px 0; font-weight: 500;"><strong>简介：</strong> 你的博客简介</li>
+          <li style="margin-bottom: 20px; padding: 5px 0; font-weight: 500;"><strong>链接：</strong> https://xxx.com</li>
+          <li style="margin-bottom: 20px; padding: 5px 0; font-weight: 500;"><strong>图片：</strong> https://xxx/favicon.png</li>
+        </ul>
+      </div>
+
+      <!-- Separator -->
+      <hr style="border: 1px solid #eee; margin-top: 50px;">
+
+      <!-- Invitation to Submit Section -->
+      <p style="font-size: 1.2rem; color: #555; text-align: center; margin-bottom: 20px; line-height: 1.8; font-weight: 500;">
+        目前这里展示的是我的一些平台链接，<br>
+        如果你也有精彩的网站或博客，欢迎留言发给我！<br>
+        我期待与你一起分享更多精彩的内容！🎉
+      </p>
+      </div>
+
   items:
     - {
-      title: "Fluid Blog",
-      intro: "主题博客",
-      link: "https://hexo.fluid-dev.com/",
-      avatar: "/img/favicon.png"
+      title: "知乎",
+      intro: "记录与分享我的成长",
+      link: "https://www.zhihu.com/people/nan-xi-lie-jiu-93",
+      avatar: "https://www.zhihu.com/favicon.ico"
     }
     - {
-      title: "Fluid Docs",
-      intro: "主题使用指南",
-      link: "https://hexo.fluid-dev.com/docs/",
-      avatar: "/img/favicon.png"
+      title: "GitHub",
+      intro: "开源项目与代码分享",
+      link: "https://github.com/Re-ljk",
+      avatar: "https://github.com/favicon.ico"
     }
     - {
-      title: "Fluid Repo",
-      intro: "主题 GitHub 仓库",
-      link: "https://github.com/fluid-dev/hexo-theme-fluid",
-      avatar: "/img/favicon.png"
+      title: "LeetCode",
+      intro: "挑战编程，提升自我",
+      link: "https://leetcode.cn/u/mental-flow-c/",
+      avatar: "https://leetcode.cn/favicon.ico"
     }
-
-  # 当成员头像加载失败时，替换为指定图片
-  # When the member avatar fails to load, replace the specified image
+    - {
+      title: "Bilibili",
+      intro: "视频与分享，娱乐成长",
+      link: "https://space.bilibili.com/669840561?spm_id_from=333.1007.0.0",
+      avatar: "https://www.bilibili.com/favicon.ico"
+    }
+    - {
+      title: "AcWing",
+      intro: "算法与编程，拓展视野",
+      link: "https://www.acwing.com/user/myspace/index/242104/",
+      avatar: "https://www.acwing.com/favicon.ico"
+    }
+    - {
+      title: "CSDN",
+      intro: "技术文章与编程分享",
+      link: "https://blog.csdn.net/qq_66599751?spm=1000.2115.3001.5343",
+      avatar: "https://www.csdn.net/favicon.ico"
+    }
   onerror_avatar: /img/avatar.png
 
-  # 友链下方自定义区域，支持 HTML，可插入例如申请友链的文字
-  # Custom content at the bottom of the links
-  custom:
-    enable: false
-    content: '<hr><p>在下方留言申请加入我的友链，按如下格式提供信息：</p><ul><li>博客名：Fluid</li><li>简介：Fluid 主题官方博客</li><li>链接：https://hexo.fluid-dev.com</li><li>图片：https://hexo.fluid-dev.com/img/favicon.png</li></ul>'
 
   # 评论插件
   # Comment plugin
   comments:
-    enable: false
+    enable: true
     # 指定的插件，需要同时设置对应插件的必要参数
     # The specified plugin needs to set the necessary parameters at the same time
-    # Options: utterances | disqus | gitalk | valine | waline | changyan | livere | remark42 | twikoo | cusdis | giscus | discuss
-    type: disqus
+    # Options: utterances | disqus | gitalk | valine | waline | changyan | livere | remark42 | twikoo | cusdis
+    type: waline
 
 
 #---------------------------
 # 以下是配置 JS CSS 等静态资源的 URL 前缀，可以自定义成 CDN 地址，
-# 如果需要修改，最好使用与默认配置相同的版本，以避免潜在的问题，
+# 默认的 jsDelivr CDN 可能在部分地区无法访问，如果需要修改，最好使用与默认配置相同的版本，以避免潜在的问题，
 # ** 如果你不知道如何设置，请不要做任何改动 **
 #
 # Here is the url prefix to configure the static assets. Set CDN addresses you want to customize.
@@ -1062,13 +1136,13 @@ static_prefix:
 
   github_markdown: https://lib.baomitu.com/github-markdown-css/4.0.0/
 
-  jquery: https://lib.baomitu.com/jquery/3.6.4/
+  jquery: https://lib.baomitu.com/jquery/3.6.0/
 
   bootstrap: https://lib.baomitu.com/twitter-bootstrap/4.6.1/
 
-  prismjs: https://lib.baomitu.com/prism/1.29.0/
+  prismjs: https://lib.baomitu.com/prism/1.26.0/
 
-  tocbot: https://lib.baomitu.com/tocbot/4.20.1/
+  tocbot: https://lib.baomitu.com/tocbot/4.18.0/
 
   typed: https://lib.baomitu.com/typed.js/2.0.12/
 
@@ -1076,26 +1150,37 @@ static_prefix:
 
   nprogress: https://lib.baomitu.com/nprogress/0.2.0/
 
-  mathjax: https://lib.baomitu.com/mathjax/3.2.2/
+  mathjax: https://lib.baomitu.com/mathjax/3.2.0/
 
-  katex: https://lib.baomitu.com/KaTeX/0.16.2/
+  katex: https://lib.baomitu.com/KaTeX/0.15.2/
 
   busuanzi: https://busuanzi.ibruce.info/busuanzi/2.3/
 
-  clipboard: https://lib.baomitu.com/clipboard.js/2.0.11/
+  clipboard: https://lib.baomitu.com/clipboard.js/2.0.10/
 
-  mermaid: https://lib.baomitu.com/mermaid/8.14.0/
+  mermaid: https://lib.baomitu.com/mermaid/8.13.10/
 
-  valine: https://lib.baomitu.com/valine/1.5.1/
+  valine: https://lib.baomitu.com/valine/1.4.16/
 
   waline: https://cdn.staticfile.org/waline/2.15.5/
 
-  gitalk: https://lib.baomitu.com/gitalk/1.8.0/
+  gitalk: https://lib.baomitu.com/gitalk/1.7.2/
 
   disqusjs: https://lib.baomitu.com/disqusjs/1.3.0/
 
-  twikoo: https://lib.baomitu.com/twikoo/1.6.8/
-
-  discuss: https://lib.baomitu.com/discuss/1.2.1/
+  twikoo: https://lib.baomitu.com/twikoo/1.4.17/
 
   hint: https://lib.baomitu.com/hint.css/2.7.0/
+
+
+# 加载动画
+loading:
+  enable: false
+  # 动画时长，从动画开始播放计算，不包含页面加载时间，单位ms
+  play_time: 250
+
+# MathJax
+
+mathjax:
+  enable: true
+  per_page: true
