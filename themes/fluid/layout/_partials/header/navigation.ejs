@@ -1,0 +1,280 @@
+<nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand" href="<%= url_for() %>">
+      <strong class="navbar-title"><%= theme.navbar.blog_title || config.title %></strong>
+    </a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        <% for(const each of theme.navbar.menu || []) { %>
+          <% if (!each.submenu && !each.link) continue %>
+          <% var text = each.name || __(each.key + '.menu') || __(each.key + '.title') %>
+          <% if (text.indexOf('.menu') !== -1 || text.indexOf('.title') !== -1) {
+            text = each.key
+          } %>
+          <% if (each.submenu) { %>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" target="_self" href="javascript:;" role="button"
+                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <%- each.icon ? '<i class="' + each.icon + '"></i>' : '' %>
+                <span><%- text %></span>
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <% for(const subEach of each.submenu || []) { %>
+                  <% if (!subEach.link) continue %>
+                  <% var subText = subEach.name || __(subEach.key + '.title') %>
+                  <% if (subText.indexOf('.title') !== -1) {
+                    subText = subEach.key
+                  } %>
+                  <a class="dropdown-item" href="<%= url_for(subEach.link) %>" target="<%= subEach.target || '_self' %>">
+                    <%- subEach.icon ? '<i class="' + subEach.icon + '"></i>' : '' %>
+                    <span><%- subText %></span>
+                  </a>
+                <% } %>
+              </div>
+            </li>
+          <% } else { %>
+            <li class="nav-item">
+              <a class="nav-link" href="<%= url_for(each.link) %>" target="<%= each.target || '_self' %>">
+                <%- each.icon ? '<i class="' + each.icon + '"></i>' : '' %>
+                <span><%- text %></span>
+              </a>
+            </li>
+          <% } %>
+        <% } %>
+        <% if(theme.search.enable) { %>
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" target="_self" href="javascript:;" data-toggle="modal" data-target="#modalSearch" aria-label="Search">
+              <i class="iconfont icon-search"></i>
+            </a>
+          </li>
+          <% import_js(theme.static_prefix.internal_js, 'local-search.js') %>
+        <% } %>
+        <% if(theme.dark_mode && theme.dark_mode.enable) { %>
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" target="_self" href="javascript:;" aria-label="Color Toggle">
+              <i class="iconfont icon-dark" id="color-toggle-icon"></i>
+            </a>
+          </li>
+        <% } %>
+      </ul>
+    </div>
+    
+    <!-- <style type="text/css">
+        .lantern-box {
+            position: fixed;
+            top: -25px;
+            right: 95px;
+            z-index: 9999;
+            pointer-events: none;
+        }
+
+        .lantern-box1 {
+            position: fixed;
+            top: -15px;
+            right: -5px;
+            z-index: 9998;
+            pointer-events: none;
+        }
+
+        .lantern {
+            position: relative;
+            width: 120px;
+            height: 90px;
+            margin: 50px;
+            background: #d8000f;
+            background: rgba(216, 0, 15, .8);
+            border-radius: 50% 50%;
+            -webkit-transform-origin: 50% -100px;
+            -webkit-animation: swing 5s infinite ease-in-out;
+            box-shadow: -5px 5px 30px 4px #fc903d;
+        }
+
+        .lantern-a {
+            width: 100px;
+            height: 90px;
+            background: #d8000f;
+            background: rgba(216, 0, 15, .1);
+            margin: 12px 8px 8px 8px;
+            border-radius: 50% 50%;
+            border: 2px solid #dc8f03;
+        }
+
+        .lantern-b {
+            width: 45px;
+            height: 90px;
+            background: #d8000f;
+            background: rgba(216, 0, 15, .1);
+            margin: -4px 8px 8px 26px;
+            border-radius: 50% 50%;
+            border: 2px solid #dc8f03;
+        }
+
+        .lantern-line {
+            position: absolute;
+            top: -35px;
+            left: 60px;
+            width: 2px;
+            height: 35px;
+            background: #dc8f03;
+        }
+
+        .tassel-a {
+            position: relative;
+            width: 5px;
+            height: 20px;
+            margin: -5px 0 0 59px;
+            -webkit-animation: swing 4s infinite ease-in-out;
+            -webkit-transform-origin: 50% -45px;
+            background: orange;
+            border-radius: 0 0 5px 5px
+        }
+
+        .tassel-b {
+            position: absolute;
+            top: 14px;
+            left: -2px;
+            width: 10px;
+            height: 10px;
+            background: #dc8f03;
+            border-radius: 50%;
+        }
+
+        .tassel-c {
+            position: absolute;
+            top: 18px;
+            left: -2px;
+            width: 10px;
+            height: 35px;
+            background: orange;
+            border-radius: 0 0 0 5px;
+        }
+
+        .lantern:before {
+            position: absolute;
+            top: -7px;
+            left: 29px;
+            height: 12px;
+            width: 60px;
+            content: " ";
+            display: block;
+            z-index: 999;
+            border-radius: 5px 5px 0 0;
+            border: solid 1px #dc8f03;
+            background: orange;
+            background: linear-gradient(to right, #dc8f03, orange, #dc8f03, orange, #dc8f03);
+        }
+
+        .lantern:after {
+            position: absolute;
+            bottom: -7px;
+            left: 10px;
+            height: 12px;
+            width: 60px;
+            content: " ";
+            display: block;
+            margin-left: 20px;
+            border-radius: 0 0 5px 5px;
+            border: solid 1px #dc8f03;
+            background: orange;
+            background: linear-gradient(to right, #dc8f03, orange, #dc8f03, orange, #dc8f03);
+        }
+
+        .lantern-t {
+            margin-top: 10px;
+            font-family: KaiTi, Arial, Lucida Grande, Tahoma, sans-serif;
+            font-size: 1.5rem;
+            color: #f8b63b;
+            font-weight: 700;
+            line-height: 35px;
+            text-align: center;
+        }
+
+        .lantern-box,
+        .lantern-box1,
+        .lantern-t {
+            background: 0 0 !important;
+        }
+
+        @-moz-keyframes swing {
+            0% {
+                -moz-transform: rotate(-10deg)
+            }
+
+            50% {
+                -moz-transform: rotate(10deg)
+            }
+
+            100% {
+                -moz-transform: rotate(-10deg)
+            }
+        }
+
+        @-webkit-keyframes swing {
+            0% {
+                -webkit-transform: rotate(-10deg)
+            }
+
+            50% {
+                -webkit-transform: rotate(10deg)
+            }
+
+            100% {
+                -webkit-transform: rotate(-10deg)
+            }
+        }
+
+        @media screen and (max-width: 992px) {
+            .lantern-widget {
+                display: none;
+            }
+        }
+    </style>
+    <div class ="lantern-widget" >
+      <div class="lantern-box">
+          <div class="lantern">
+              <div class="lantern-line">
+              </div>
+              <div class="lantern-a">
+                  <div class="lantern-b">
+                      <div class="lantern-t">龙年
+                      </div>
+                  </div>
+              </div>
+              <div class="tassel-a">
+                  <div class="tassel-c">
+                  </div>
+                  <div class="tassel-b">
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="lantern-box1">
+          <div class="lantern">
+              <div class="lantern-line">
+              </div>
+              <div class="lantern-a">
+                  <div class="lantern-b">
+                      <div class="lantern-t">大吉
+                      </div>
+                  </div>
+              </div>
+              <div class="tassel-a">
+                  <div class="tassel-c">
+                  </div>
+                  <div class="tassel-b">
+                  </div>
+              </div>
+          </div>
+      </div>
+    </div> -->
+    
+  </div>
+</nav>
