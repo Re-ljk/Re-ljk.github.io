@@ -7,13 +7,41 @@ layout: "about"
 
 <section style="font-family: 'Arial', sans-serif; color: #333; padding-left: 20px; padding-right: 20px; margin: 0;">
 
-<p style="font-size: 1em; line-height: 1.6; max-width: 800px; margin: 0 auto; color: #555;">
-        <span style="color: rgb(9, 4, 10);"><strong>AI Researcher | Software Engineer | Tech Enthusiast | Lifelong Learner</strong></span><br><br>
-        <span style="font-weight: bold; color: #1E90FF;">I am currently</span> a <strong style="color: #FFD700;">Master’s student</strong> in <strong style="color: #FF4500;">Artificial Intelligence</strong> at <strong style="color: #32CD32;">University of Electronic Science and Technology of China (UESTC)</strong>, admitted through recommendation without entrance exam.<br><br>
-        <span style="font-weight: bold; color: #1E90FF;">I received my</span> <strong style="color: #FFD700;">B.Eng. degree</strong> in <strong style="color: #FF4500;">Artificial Intelligence</strong> from <strong style="color: #32CD32;">Yangzhou University</strong> in <strong style="color: #FF6347;">June 2025</strong>.
-</p>
+  <h2 style="font-size: 1.4em; color: #000;">👋 About Me</h2>
+
+  <p style="font-size: 1em; line-height: 1.6; max-width: 800px; margin: 0 auto; color: #555;">
+    &emsp;&emsp;I am <strong style="color:#1E90FF;">Jiangkuan Li</strong>, a first-year <strong style="color:#FFD700;">master's student</strong> in 
+    <strong style="color:#FF4500;">Artificial Intelligence</strong> at the 
+    <strong style="color:#32CD32;">University of Electronic Science and Technology of China (UESTC)</strong>, 
+    where I was admitted through recommendation without an entrance exam. 
+    I earned my <strong style="color:#FFD700;">B.Eng. degree</strong> in 
+    <strong style="color:#FF4500;">Artificial Intelligence</strong> from 
+    <strong style="color:#32CD32;">Yangzhou University</strong> in 
+    <strong style="color:#FF6347;">June 2025</strong>. 
+  </p>
+
+  <p style="font-size: 1em; line-height: 1.6; max-width: 800px; margin: 0 auto; color: #555;">
+    &emsp;&emsp;My research interests focus on 🔄 
+    <strong style="color:#8A2BE2;">transfer learning</strong>, 🖼️ 
+    <strong style="color:#FF69B4;">cross-modal retrieval</strong>, and 🕵️‍♂️ 
+    <strong style="color:#DAA520;">person re-identification</strong>. 
+    I am dedicated to exploring innovative approaches that push the boundaries of 
+    <strong style="color:#FF4500;">intelligent systems</strong> and their applications.  
+  </p>
+
+  <p style="font-size: 1em; line-height: 1.6; max-width: 800px; margin: 0 auto; color: #555;">
+    &emsp;&emsp;If you are interested in my work, feel free to contact me via 
+    <a href="mailto:jiangkuanli@163.com" style="color:#1E90FF; font-weight:bold;">email</a>, 
+    connect with me on <a href="https://github.com/Re-ljk" style="color:#000; font-weight:bold;">GitHub</a>, 
+    or visit my <a href="https://www.leejk-magic.top/" style="color:#32CD32; font-weight:bold;">personal blog</a> 
+    for research updates and project insights. 
+    I am always open to <strong style="color:#FF6347;">collaborations</strong> and 
+    <strong style="color:#FF6347;">academic exchanges</strong>.  
+  </p>
 
 </section>
+
+
 
 ### 🧠 Research Interests
 <div style="padding-left: 20px;">
