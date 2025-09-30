@@ -7,8 +7,6 @@ layout: "about"
 
 <section style="font-family: 'Arial', sans-serif; color: #333; padding-left: 20px; padding-right: 20px; margin: 0;">
 
-  <h2 style="font-size: 1.4em; color: #000;">👋 About Me</h2>
-
   <p style="font-size: 1em; line-height: 1.6; max-width: 800px; margin: 0 auto; color: #555;">
     &emsp;&emsp;I am <strong style="color:#1E90FF;">Jiangkuan Li</strong>, a first-year <strong style="color:#FFD700;">master's student</strong> in 
     <strong style="color:#FF4500;">Artificial Intelligence</strong> at the 
