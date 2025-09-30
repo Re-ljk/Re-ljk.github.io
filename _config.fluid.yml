@@ -379,7 +379,7 @@ navbar:
       ]
     }
 
-    - { key: "links", link: "/links/", icon: "iconfont icon-link-fill", name: "友链"}
+    # - { key: "links", link: "/links/", icon: "iconfont icon-link-fill", name: "友链"}
     - { key: "留言", link: "/messagebd/", icon: "iconfont icon-comment" }
     - { key: "关于我", link: "/about/", icon: "iconfont icon-user-fill" }
     
