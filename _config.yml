@@ -107,7 +107,8 @@ deploy:
 
 
 plugins:
-    hexo-generator-feed
+  - hexo-generator-feed
+
 #Feed Atom
 feed:
     type: atom
