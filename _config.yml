@@ -103,8 +103,9 @@ theme: fluid
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
   type: git
-  repo: https://github.com/Re-ljk/Re-ljk.github.io.git
+  repo: git@github.com:Re-ljk/Re-ljk.github.io.git
   branch: main
+
 
 
 plugins:
