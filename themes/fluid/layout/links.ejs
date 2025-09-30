@@ -7,12 +7,7 @@ page.banner_img_height = theme.links.banner_img_height
 page.banner_mask_alpha = theme.links.banner_mask_alpha
 page.comment = theme.links.comments.type
 %>
-<% if(theme.links.custom && theme.links.custom.enable && theme.links.custom.content) { %>
-  <!-- Custom -->
-  <div class="custom mx-auto">
-    <%- theme.links.custom.content %>
-  </div>
-<% } %>
+
 <div class="row links">
   <% for(const each of theme.links.items || []) { %>
     <% if (!each.title || !each.link) continue %>
@@ -34,5 +29,12 @@ page.comment = theme.links.comments.type
     </div>
   <% } %>
 </div>
+
+<% if(theme.links.custom && theme.links.custom.enable && theme.links.custom.content) { %>
+  <!-- Custom -->
+  <div class="custom mx-auto">
+    <%- theme.links.custom.content %>
+  </div>
+<% } %>
 
 <%- inject_point('linksComments') %>
