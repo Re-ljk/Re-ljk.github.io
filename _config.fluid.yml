@@ -496,7 +496,7 @@ footer:
 index:
   # 首页 Banner 头图，可以是相对路径或绝对路径，以下相同
   # Path of Banner image, can be a relative path or an absolute path, the same on other pages
-  banner_img: https://image.baidu.com/search/detail?adpicid=0&b_applid=11296186468848061479&bdtype=15&commodity=&copyright=&cs=174453690%2C744119657&di=7542222709418098689&fr=click-pic&fromurl=http%253A%252F%252Fmbd.baidu.com%252Fnewspage%252Fdata%252Fdtlandingsuper%253Fnid%253Ddt_4997498756713017087&gsm=5a&hd=&height=0&hot=&ic=&ie=utf-8&imgformat=&imgratio=&imgspn=0&is=0%2C0&isImgSet=&latest=&lid=&lm=&objurl=https%253A%252F%252Fiknow-pic.cdn.bcebos.com%252Fb58f8c5494eef01f3f105344f2fe9925bc317d2e&os=164341761%2C3037544042&pd=image_content&pi=0&pn=73&rn=1&simid=174453690%2C744119657&tn=baiduimagedetail&width=0&word=%E5%A5%BD%E7%9C%8B%E7%9A%84%E7%94%B5%E8%84%91%E8%83%8C%E6%99%AF%E5%9B%BE&z=
+  banner_img: https://iknow-pic.cdn.bcebos.com/b58f8c5494eef01f3f105344f2fe9925bc317d2e
   # 头图高度，屏幕百分比
   # Height ratio of banner image
   # Available: 0 - 100
