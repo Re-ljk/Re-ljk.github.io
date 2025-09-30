@@ -3,29 +3,29 @@ name: Hexo Deploy
 on:
   push:
     branches:
-      - main  # 你部署的分支，通常是 main 或 master
+      - main   # 监听 main 分支 push
 
 jobs:
   build:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Checkout repository
-      uses: actions/checkout@v3
+      - name: Checkout repository
+        uses: actions/checkout@v4
 
-    - name: Setup Node.js
-      uses: actions/setup-node@v3
-      with:
-        node-version: 18
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18
 
-    - name: Install Hexo
-      run: npm install hexo-cli -g
+      - name: Install dependencies
+        run: npm install
 
-    - name: Install dependencies
-      run: npm install
+      - name: Generate site
+        run: npx hexo generate
 
-    - name: Generate site
-      run: hexo generate
-
-    - name: Deploy to GitHub Pages
-      run: hexo deploy
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v6
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./public
