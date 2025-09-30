@@ -496,8 +496,7 @@ footer:
 index:
   # 首页 Banner 头图，可以是相对路径或绝对路径，以下相同
   # Path of Banner image, can be a relative path or an absolute path, the same on other pages
-  banner_img: https://www.bing.com/images/search?view=detailV2&ccid=kEUFvPDE&id=173B8CDA1E2177C776479BF36D6EAA023FB4429A&thid=OIP.kEUFvPDEJHiPYCi4lSqi5wHaEK&mediaurl=https%3a%2f%2fc-ssl.duitang.com%2fuploads%2fitem%2f201803%2f26%2f20180326132825_fnrxC.jpeg&cdnurl=https%3a%2f%2fth.bing.com%2fth%2fid%2fR.904505bcf0c424788f6028b8952aa2e7%3frik%3dmkK0PwKqbm3zmw%26pid%3dImgRaw%26r%3d0&exph=1440&expw=2560&q=%e5%a5%bd%e7%9c%8b%e7%9a%84%e7%94%b5%e8%84%91%e8%83%8c%e6%99%af%e5%9b%be&FORM=IRPRST&ck=651FF8B7A11D0D15717FD024B6475619&selectedIndex=0&itb=0
-
+  banner_img: bg.jpeg
   # 头图高度，屏幕百分比
   # Height ratio of banner image
   # Available: 0 - 100
