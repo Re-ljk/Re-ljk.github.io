@@ -981,7 +981,7 @@ about:
     - { class: "iconfont icon-github-fill", link: "https://github.com/Re-ljk", tip: "GitHub" }
     - { class: "iconfont icon-mail", link: "mailto:jiangkuanli@163.com", tip: "邮箱" }
 
-    - { class: "iconfont icon-zhihu-fill", link: "https://www.zhihu.com/people/nan-xi-lie-jiu-93", tip: "知乎" }
+    - { class: "iconfont icon-zhihu-fill", link: "https://jiangkuanli.github.io/", tip: "个人学术主页" }
     
     # - { class: "iconfont icon-douban-fill", link: "https://douban.com", tip: "豆瓣" }
     # - { class: "iconfont icon-wechat-fill", qrcode: "/img/favicon.png" }
