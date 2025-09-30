@@ -3,9 +3,10 @@ title: 关于
 layout: "about"
 ---
 
-### 👋 About Me
+## 👋 About Me
 
 <section style="font-family: 'Arial', sans-serif; color: #333; padding-left: 20px; padding-right: 20px; margin: 0;">
+
 
   <p style="font-size: 1em; line-height: 1.6; max-width: 800px; margin: 0 auto; color: #555;">
     &emsp;&emsp;I am <strong style="color:#1E90FF;">Jiangkuan Li</strong>, a first-year <strong style="color:#FFD700;">master's student</strong> in 
@@ -41,7 +42,7 @@ layout: "about"
 
 
 
-### 🧠 Research Interests
+## 🧠 Research Interests
 <div style="padding-left: 20px;">
     <ul style="font-size: 1em; line-height: 1.6; color: #555;">
         <li><strong>🔄 Transfer Learning</strong></li>
@@ -50,7 +51,7 @@ layout: "about"
     </ul>
 </div>
 
-### 🔥 News
+## 🔥 News
 <div style="padding-left: 20px;">
     <ul style="font-size: 1em; line-height: 1.6; color: #555;">
         <li><strong style="color: #32CD32;">2025.06</strong> 🌟 Graduated with B.Eng. in Artificial Intelligence from Yangzhou University</li>
@@ -59,7 +60,7 @@ layout: "about"
     </ul>
 </div>
 
-### 📝 Publications & Patents
+## 📝 Publications & Patents
 <div style="padding-left: 20px;">
     <ul style="font-size: 1em; line-height: 1.6; color: #555;">
         <li><strong>2024</strong> — Paper: <em>Online and Offline Model for Housekeeping Order Assignment Based on Dynamic Programming Algorithm</em></li>
@@ -70,7 +71,7 @@ layout: "about"
     </ul>
 </div>
 
-### 🚀 Competitions & Achievements
+## 🚀 Competitions & Achievements
 <div style="padding-left: 20px;">
  <ul style="font-size: 1em; line-height: 1.6; color: #555;">
     <li><strong style="color: #32CD32;">2024.11</strong> — National Second Prize, Xuechuang Cup Entrepreneurship Simulation Competition (Team of 3, Rank 3)</li>
@@ -97,7 +98,7 @@ layout: "about"
 </ul>
 </div>
 
-### 🎖 Honors & Awards
+## 🎖 Honors & Awards
 <div style="padding-left: 20px;">
     <ul style="font-size: 1em; line-height: 1.6; color: #555;">
         <li><strong>National Endeavor Scholarship</strong> (2022, 2023, 2024)</li>
@@ -109,7 +110,7 @@ layout: "about"
     </ul>
 </div>
 
-### 📖 Education
+## 📖 Education
 <div style="padding-left: 20px;">
     <ul style="font-size: 1em; line-height: 1.6; color: #555;">
         <li><strong style="color: #32CD32;">2024.09 – Present</strong> 🎓 Master’s in Artificial Intelligence, University of Electronic Science and Technology of China (UESTC)</li>
