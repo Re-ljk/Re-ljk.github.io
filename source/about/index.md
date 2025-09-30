@@ -3,95 +3,90 @@ title: 关于
 layout: "about"
 ---
 
-### 🤖关于我
+### 👋 About Me
 
 <section style="font-family: 'Arial', sans-serif; color: #333; padding-left: 20px; padding-right: 20px; margin: 0;">
 
 <p style="font-size: 1em; line-height: 1.6; max-width: 800px; margin: 0 auto; color: #555;">
         <span style="color: rgb(9, 4, 10);"><strong>AI Researcher | Software Engineer | Tech Enthusiast | Lifelong Learner</strong></span><br><br>
-        <span style="font-weight: bold; color: #1E90FF;">我目前正在</span> <strong style="color: #32CD32;">扬州大学</strong> 攻读 <strong style="color: #FF4500;">人工智能</strong> 本科学位，并将于 <strong style="color: #FF6347;">2025年7月</strong> 毕业。<br><br>
-        <span style="font-weight: bold; color: #1E90FF;">毕业后，我将继续我的学术旅程，于</span> <strong style="color: #32CD32;">2025年9月</strong> 前往 <strong style="color: #FF4500;">电子科技大学 (UESTC)</strong> 攻读 <strong style="color: #FFD700;">研究生学位</strong>。
-    </p>
+        <span style="font-weight: bold; color: #1E90FF;">I am currently</span> a <strong style="color: #FFD700;">Master’s student</strong> in <strong style="color: #FF4500;">Artificial Intelligence</strong> at <strong style="color: #32CD32;">University of Electronic Science and Technology of China (UESTC)</strong>, admitted through recommendation without entrance exam.<br><br>
+        <span style="font-weight: bold; color: #1E90FF;">I received my</span> <strong style="color: #FFD700;">B.Eng. degree</strong> in <strong style="color: #FF4500;">Artificial Intelligence</strong> from <strong style="color: #32CD32;">Yangzhou University</strong> in <strong style="color: #FF6347;">June 2025</strong>.
+</p>
 
 </section>
 
-<style>
-    @keyframes bounce {
-        0%, 100% {
-            transform: translateY(0);
-        }
-        50% {
-            transform: translateY(-10px);
-        }
-    }
-</style>
-
-### 🧠 我的研究方向：
+### 🧠 Research Interests
 <div style="padding-left: 20px;">
     <ul style="font-size: 1em; line-height: 1.6; color: #555;">
-        <li><strong>生成式人工智能 (Generative AI)</strong></li>
-        <li><strong>网络安全 (Cybersecurity)</strong></li>
-        <li><strong>计算机视觉 (Computer Vision)</strong></li>
+        <li><strong>🔄 Transfer Learning</strong></li>
+        <li><strong>🖼️ Cross-modal Retrieval</strong></li>
+        <li><strong>🕵️‍♂️ Person Re-identification</strong></li>
     </ul>
 </div>
 
-### 🧾 大事记
+### 🔥 News
 <div style="padding-left: 20px;">
     <ul style="font-size: 1em; line-height: 1.6; color: #555;">
-        <li><strong style="color: #32CD32;">2025年9月</strong> 🎓 免试进入电子科技大学攻读研究生学位</li>
-        <li><strong style="color: #32CD32;">2025年6月</strong> 🌟 完成扬州大学人工智能本科学位</li>
-        <li><strong style="color: #32CD32;">2021年9月 - 2025年6月</strong> 📚 在扬州大学信息工程学院攻读人工智能专业，期间担任新生班主任助理与班级学习委员，积极参与学术、竞赛和社会实践，获得多项荣誉。</li>
+        <li><strong style="color: #32CD32;">2025.06</strong> 🌟 Graduated with B.Eng. in Artificial Intelligence from Yangzhou University</li>
+        <li><strong style="color: #32CD32;">2024.09</strong> 🎓 Admitted to UESTC for graduate studies without entrance exam</li>
+        <li><strong style="color: #32CD32;">2021.09 - 2025.06</strong> 📚 Studied at Yangzhou University, served as freshman counselor assistant and class study committee member, actively engaged in academic competitions, research, and social practice</li>
     </ul>
 </div>
 
-### 🚀 竞赛与科研成果
+### 📝 Publications & Patents
 <div style="padding-left: 20px;">
- <ul>
-    <li><strong>2022年6月</strong> — 扬州大学数学建模竞赛二等奖（团队3人，排名第1）</li>
-    <li><strong>2022年8月</strong> — 华数杯全国大学生数学建模竞赛全国二等奖（团队3人，排名第1）</li>
-    <li><strong>2022年9月</strong> — 高教社杯全国大学生数学建模竞赛江苏赛区二等奖（团队3人，排名第1）</li>
-    <li><strong>2023年3月</strong> — 2022MathorCup杯数学建模竞赛全国一等奖（团队3人，排名第1）</li>
-    <li><strong>2023年7月</strong> — 江苏省高等数学竞赛江苏省二等奖（个人，排名第1）</li>
-    <li><strong>2023年9月</strong> — 高教社杯全国大学生数学建模竞赛江苏赛区二等奖（团队3人，排名第1）</li>
-    <li><strong>2023年9月</strong> — 学创杯创业模拟大赛校二等奖（团队3人，排名第3）</li>
-    <li><strong>2023年10月</strong> — 全国大学生算法设计与编程挑战赛优秀奖（个人，排名第1）</li>
-    <li><strong>2023年12月</strong> — 全国大学生高等数学竞赛全国三等奖（个人，排名第1）</li>
-    <li><strong>2023年12月</strong> — 挑战杯课外学术科技作品竞赛与创业计划大赛校级银奖（团队11人，排名第3）</li>
-    <li><strong>2023年12月</strong> — 汇创杯优秀奖（团队11人，排名第5）</li>
-    <li><strong>2024年4月</strong> — 蓝桥杯全国软件和信息技术江苏省二等奖（个人，排名第1）</li>
-    <li><strong>2024年5月</strong> — 中国大学生计算机设计大赛江苏赛区一等奖（团队5人，排名第2）</li>
-    <li><strong>2024年5月</strong> — 中国大学生计算机设计大赛全国三等奖（团队5人，排名第2）</li>
-    <li><strong>2024年6月</strong> — 学创杯创业模拟大赛江苏省特等奖（团队3人，排名第2）</li>
-    <li><strong>2024年7月</strong> — 江苏省高等数学竞赛江苏省二等奖（个人，排名第1）</li>
-    <li><strong>2024年7月</strong> — 中国计算机大赛-C4网络技术挑战赛华东赛区三等奖（团队6人，排名第3）</li>
-    <li><strong>2024年7月</strong> — 中国计算机大赛-C4网络技术挑战赛华东赛区三等奖（团队5人，排名第3）</li>
-    <li><strong>2024年7月</strong> — 睿抗机器人开发者大赛江苏赛区一等奖（团队2人，排名第1）</li>
-    <li><strong>2024年7月</strong> — 睿抗机器人开发者大赛全国三等奖（团队2人，排名第1）</li>
-    <li><strong>2024年11月</strong> — 学创杯创业模拟大赛全国二等奖（团队3人，排名第3）</li>
+    <ul style="font-size: 1em; line-height: 1.6; color: #555;">
+        <li><strong>2024</strong> — Paper: <em>Online and Offline Model for Housekeeping Order Assignment Based on Dynamic Programming Algorithm</em></li>
+        <li><strong>2024</strong> — Patent: <em>A Backdoor Defense Method Achieved by Attention-based Transfer in Federated Multi-Teacher Distillation</em></li>
+        <li><strong>2023</strong> — Paper: <em>Base Station Planning Based on Region Division and Mean Shift Clustering</em></li>
+        <li><strong>2023.05 - 2024.05</strong> — Research Project: Optimization of Vehicular Network Communication Resource Allocation Based on Multi-Agent Deep Reinforcement Learning</li>
+        <li><strong>2023.05 - 2024.05</strong> — Research Project: Streaming Media Classification and Abnormal Traffic Detection Algorithms</li>
+    </ul>
+</div>
+
+### 🚀 Competitions & Achievements
+<div style="padding-left: 20px;">
+ <ul style="font-size: 1em; line-height: 1.6; color: #555;">
+    <li><strong style="color: #32CD32;">2024.11</strong> — National Second Prize, Xuechuang Cup Entrepreneurship Simulation Competition (Team of 3, Rank 3)</li>
+    <li><strong style="color: #32CD32;">2024.07</strong> — National Third Prize, ReCon Robot Developer Competition (Team of 2, Rank 1)</li>
+    <li><strong style="color: #32CD32;">2024.07</strong> — Jiangsu First Prize, ReCon Robot Developer Competition (Team of 2, Rank 1)</li>
+    <li><strong style="color: #32CD32;">2024.07</strong> — East China Third Prize, China Computer Competition - C4 Network Technology Challenge (Team of 5, Rank 3)</li>
+    <li><strong style="color: #32CD32;">2024.07</strong> — East China Third Prize, China Computer Competition - C4 Network Technology Challenge (Team of 6, Rank 3)</li>
+    <li><strong style="color: #32CD32;">2024.07</strong> — Jiangsu Second Prize, Jiangsu Higher Mathematics Competition (Individual, Rank 1)</li>
+    <li><strong style="color: #32CD32;">2024.06</strong> — Jiangsu Special Prize, Xuechuang Cup Entrepreneurship Simulation Competition (Team of 3, Rank 2)</li>
+    <li><strong style="color: #32CD32;">2024.05</strong> — National Third Prize, Chinese Collegiate Computing Design Competition (Team of 5, Rank 2)</li>
+    <li><strong style="color: #32CD32;">2024.05</strong> — Jiangsu First Prize, Chinese Collegiate Computing Design Competition (Team of 5, Rank 2)</li>
+    <li><strong style="color: #32CD32;">2024.04</strong> — Jiangsu Second Prize, Lanqiao Cup Software & IT Competition (Individual, Rank 1)</li>
+    <li><strong style="color: #32CD32;">2023.12</strong> — Excellence Award, Huichuang Cup (Team of 11, Rank 5)</li>
+    <li><strong style="color: #32CD32;">2023.12</strong> — Silver Award, Challenge Cup Academic and Entrepreneurial Competition (Team of 11, Rank 3)</li>
+    <li><strong style="color: #32CD32;">2023.12</strong> — National Third Prize, National College Mathematics Competition (Individual, Rank 1)</li>
+    <li><strong style="color: #32CD32;">2023.10</strong> — Excellence Award, National Algorithm Design and Programming Challenge (Individual, Rank 1)</li>
+    <li><strong style="color: #32CD32;">2023.09</strong> — School Second Prize, Xuechuang Cup Entrepreneurship Simulation Competition (Team of 3, Rank 3)</li>
+    <li><strong style="color: #32CD32;">2023.09</strong> — Jiangsu Second Prize, Higher Education Society Cup Mathematical Modeling Competition (Team of 3, Rank 1)</li>
+    <li><strong style="color: #32CD32;">2023.07</strong> — Jiangsu Second Prize, Jiangsu Higher Mathematics Competition (Individual, Rank 1)</li>
+    <li><strong style="color: #32CD32;">2023.03</strong> — National First Prize, MathorCup Mathematical Modeling Competition (Team of 3, Rank 1)</li>
+    <li><strong style="color: #32CD32;">2022.09</strong> — Jiangsu Second Prize, Higher Education Society Cup Mathematical Modeling Competition (Team of 3, Rank 1)</li>
+    <li><strong style="color: #32CD32;">2022.08</strong> — National Second Prize, Huashu Cup National Mathematical Modeling Competition (Team of 3, Rank 1)</li>
+    <li><strong style="color: #32CD32;">2022.06</strong> — Second Prize, Yangzhou University Mathematical Modeling Competition (Team of 3, Rank 1)</li>
 </ul>
-
-
 </div>
 
-### 🏆 奖励与荣誉
+### 🎖 Honors & Awards
 <div style="padding-left: 20px;">
     <ul style="font-size: 1em; line-height: 1.6; color: #555;">
-            <li><strong>国家励志奖学金</strong>（2022年10月、2023年10月、2024年10月）</li>
-    <li><strong>校三好学生</strong>（2023年12月）</li>
-    <li><strong>校优秀学生干部</strong>（2024年12月）</li>
-    <li><strong>校优秀共青团员</strong>（2024年5月）</li>
-    <li><strong>院社会实践先进个人</strong>（2024年3月）</li>
-    <li><strong>校级社会实践优秀团队</strong>（2024年10月，团队5人，排名第3）</li>
+        <li><strong>National Endeavor Scholarship</strong> (2022, 2023, 2024)</li>
+        <li><strong>Excellent Student Cadre</strong> (Dec 2024)</li>
+        <li><strong>Excellent Communist Youth League Member</strong> (May 2024)</li>
+        <li><strong>University “Three Good Student”</strong> (Dec 2023)</li>
+        <li><strong>Advanced Individual in Social Practice</strong> (Mar 2024)</li>
+        <li><strong>Excellent Team in Social Practice</strong> (Oct 2024, Team of 5, Rank 3)</li>
     </ul>
 </div>
 
-### 🧑‍💻 科研与学术成果
+### 📖 Education
 <div style="padding-left: 20px;">
     <ul style="font-size: 1em; line-height: 1.6; color: #555;">
-        <li><strong>2024年</strong>：论文《Online and Offline Model for Housekeeping Order Assignment Based on Dynamic Programming Algorithm》</li>
-        <li><strong>2023年</strong>：论文《Base Station Planning Based on Region Division and Mean Shift Clustering》</li>
-        <li><strong>2024年</strong>：专利《一种通过基于注意力迁移的联邦多教师蒸馏实现的后门防御方法》</li>
-         <li><strong>2023年5月 - 2024年5月</strong>：科研项目:基于多智能体深度强化学习的车联网通信资源分配优化</li>
-         <li><strong>2023年5月 - 2024年5月</strong>：科研项目:流媒体分类及异常流量检测算法研究</li>
+        <li><strong style="color: #32CD32;">2024.09 – Present</strong> 🎓 Master’s in Artificial Intelligence, University of Electronic Science and Technology of China (UESTC)</li>
+        <li><strong style="color: #32CD32;">2021.09 – 2025.06</strong> 🎓 B.Eng. in Artificial Intelligence, Yangzhou University</li>
     </ul>
 </div>
