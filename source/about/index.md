@@ -8,12 +8,12 @@ layout: "about"
 <section style="font-family: 'Arial', sans-serif; color: #333; padding-left: 20px; padding-right: 20px; margin: 0;">
 
   <p style="font-size: 1em; line-height: 1.6; max-width: 800px; margin: 0 auto; color: #444;">
-    &emsp;&emsp;I am <strong style="color:#1E90FF;">Jiangkuan Li</strong>, a first-year master's student in 
+    &emsp;&emsp;I am <strong>Jiangkuan Li</strong>, a first-year master's student in 
     <strong>Software Engineering</strong> at the 
-    <strong style="color:#1E90FF;">University of Electronic Science and Technology of China (UESTC)</strong>, 
+    <strong>University of Electronic Science and Technology of China (UESTC)</strong>, 
     admitted through recommendation without an entrance exam. 
     I earned my bachelor's degree in <strong>Artificial Intelligence</strong> from 
-    <strong style="color:#1E90FF;">Yangzhou University</strong> in June 2025. 
+    <strong>Yangzhou University</strong> in June 2025. 
   </p>
 
   <p style="font-size: 1em; line-height: 1.6; max-width: 800px; margin: 0 auto; color: #444;">
@@ -28,12 +28,11 @@ layout: "about"
     &emsp;&emsp;If you are interested in my work, feel free to contact me via 
     <a href="mailto:jiangkuanli@163.com" style="color:#1E90FF; font-weight:bold;">email</a>, 
     connect with me on <a href="https://github.com/Re-ljk" style="color:#1E90FF; font-weight:bold;">GitHub</a>, 
-    or visit my <a href="https://www.leejk-magic.top/" style="color:#1E90FF; font-weight:bold;">personal blog</a>. 
+    or visit my <a href="https://jiangkuanli.github.io/" style="color:#1E90FF; font-weight:bold;">personal page</a>. 
     I am always open to collaborations and academic exchanges.  
   </p>
 
 </section>
-
 
 
 
@@ -108,7 +107,7 @@ layout: "about"
 ## 📖 Education
 <div style="padding-left: 20px;">
     <ul style="font-size: 1em; line-height: 1.6; color: #555;">
-        <li><strong style="color: #32CD32;">2024.09 – Present</strong> 🎓 Master’s in Software Engineering, University of Electronic Science and Technology of China (UESTC)</li>
+        <li><strong style="color: #32CD32;">2025.09 – Present</strong> 🎓 Master’s in Software Engineering, University of Electronic Science and Technology of China (UESTC)</li>
         <li><strong style="color: #32CD32;">2021.09 – 2025.06</strong> 🎓 Bachelor’s degree in Artificial Intelligence, Yangzhou University</li>
     </ul>
 </div>
