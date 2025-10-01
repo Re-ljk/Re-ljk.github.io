@@ -476,14 +476,14 @@ footer:
 
   # 展示网站的 PV、UV 统计数
   statistics:
-    enable: false
+    enable: true
     source: "busuanzi"
 
   # 国内大陆服务器的备案信息
   beian:
     enable: true
-    icp_text: 苏ICP证123456号
-    police_text: 苏公网安备12345678号
+    icp_text: 川ICP证123456号
+    police_text: 川公网安备12345678号
     police_code: 12345678
     police_icon: /img/police_beian.png
 
