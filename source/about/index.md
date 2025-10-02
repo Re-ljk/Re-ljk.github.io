@@ -19,7 +19,7 @@ layout: "about"
   <p style="font-size: 1em; line-height: 1.6; max-width: 800px; margin: 0 auto; color: #444;">
     &emsp;&emsp;My research interests include 
     <strong>🔄transfer learning</strong>, 
-    <strong>🖼️cross-modal retrieval</strong>, and 
+    <strong>🖼️cross-modal retrieval</strong> and 
     <strong>🕵️‍♂️person re-identification</strong>. 
     I am dedicated to exploring innovative approaches that push the boundaries of intelligent systems and their applications.  
   </p>
