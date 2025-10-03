@@ -5,7 +5,7 @@ layout: "about"
 
 ## 👋 About Me
 
-<section style="font-family: 'Arial', sans-serif; color: #333; padding-left: 20px; padding-right: 20px; margin: 0;">
+<section style="font-family: 'Arial', sans-serif; color: #333; padding-left: 20px; padding-right: 26px; margin: 0;">
 
   <p style="font-size: 1em; line-height: 1.6; max-width: 800px; margin: 0 auto; color: #444;">
     &emsp;&emsp;I am <strong>Jiangkuan Li</strong>, a first-year master's student in 
@@ -16,21 +16,17 @@ layout: "about"
     <strong>Yangzhou University</strong> in June 2025. 
   </p>
 
-  <p style="font-size: 1em; line-height: 1.6; max-width: 800px; margin: 0 auto; color: #444;">
-    &emsp;&emsp;My research interests include 
-    <strong>🔄transfer learning</strong>, 
-    <strong>🖼️cross-modal retrieval</strong> and 
-    <strong>🕵️‍♂️person re-identification</strong>. 
-    I am dedicated to exploring innovative approaches that push the boundaries of intelligent systems and their applications.  
-  </p>
+<p style="font-size: 1em; line-height: 1.6; max-width: 800px; margin: 0 auto; color: #444;">
+  &emsp;&emsp;My research interests include 
+  <strong>🔄transfer learning</strong>, 
+  <strong>🖼️cross-modal retrieval</strong> and 
+  <strong>🕵️‍♂️person re-identification</strong>. If you are interested in my work, feel free to contact me via 
+  <a href="mailto:jiangkuanli@163.com" style="color:#1E90FF; font-weight:bold;">email</a>, 
+  connect with me on <a href="https://github.com/Re-ljk" style="color:#1E90FF; font-weight:bold;">GitHub</a>, 
+  or visit my <a href="https://jiangkuanli.github.io/" style="color:#1E90FF; font-weight:bold;">personal page</a>. 
+  I am always open to collaborations and academic exchanges.  
+</p>
 
-  <p style="font-size: 1em; line-height: 1.6; max-width: 800px; margin: 0 auto; color: #444;">
-    &emsp;&emsp;If you are interested in my work, feel free to contact me via 
-    <a href="mailto:jiangkuanli@163.com" style="color:#1E90FF; font-weight:bold;">email</a>, 
-    connect with me on <a href="https://github.com/Re-ljk" style="color:#1E90FF; font-weight:bold;">GitHub</a>, 
-    or visit my <a href="https://jiangkuanli.github.io/" style="color:#1E90FF; font-weight:bold;">personal page</a>. 
-    I am always open to collaborations and academic exchanges.  
-  </p>
 
 </section>
 
@@ -54,16 +50,11 @@ layout: "about"
     </ul>
 </div>
 
-## 📝 Publications & Patents
-<div style="padding-left: 20px;">
-    <ul style="font-size: 1em; line-height: 1.6; color: #555;">
-        <li><strong>2024</strong> — Paper: <em>Online and Offline Model for Housekeeping Order Assignment Based on Dynamic Programming Algorithm</em></li>
-        <li><strong>2024</strong> — Patent: <em>A Backdoor Defense Method Achieved by Attention-based Transfer in Federated Multi-Teacher Distillation</em></li>
-        <li><strong>2023</strong> — Paper: <em>Base Station Planning Based on Region Division and Mean Shift Clustering</em></li>
-        <li><strong>2023.05 - 2024.05</strong> — Research Project: Optimization of Vehicular Network Communication Resource Allocation Based on Multi-Agent Deep Reinforcement Learning</li>
-        <li><strong>2023.05 - 2024.05</strong> — Research Project: Streaming Media Classification and Abnormal Traffic Detection Algorithms</li>
-    </ul>
-</div>
+## 📝 Publications 
+
+- [<span style="color:#1e90ff">AAAI 2025, CCF-A</span>] Attribute-Decoupled Multi-Subspace Proxy Learning for Text-Image Person Re-identification — <span style="color:#ff0000"><i>Under Review</i></span>
+
+
 
 ## 🚀 Competitions & Achievements
 <div style="padding-left: 20px;">
