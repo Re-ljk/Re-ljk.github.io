@@ -18,9 +18,9 @@ layout: "about"
 
 <p style="font-size: 1em; line-height: 1.6; max-width: 800px; margin: 0 auto; color: #444;">
   &emsp;&emsp;My research interests include 
-  <strong>🔄transfer learning</strong>, 
-  <strong>🖼️cross-modal retrieval</strong> and 
-  <strong>🕵️‍♂️person re-identification</strong>. If you are interested in my work, feel free to contact me via 
+  <strong>🔄Transfer Learning</strong>, 
+  <strong>🖼️Cross-modal Retrieval</strong>, 
+  <strong>🕵️‍♂️Person Re-identification</strong> and <strong>🤖Multimodal Large Models</strong>. If you are interested in my work, feel free to contact me via 
   <a href="mailto:jiangkuanli@163.com" style="color:#1E90FF; font-weight:bold;">email</a>, 
   connect with me on <a href="https://github.com/Re-ljk" style="color:#1E90FF; font-weight:bold;">GitHub</a>, 
   or visit my <a href="https://jiangkuanli.github.io/" style="color:#1E90FF; font-weight:bold;">personal page</a>. 
@@ -38,6 +38,7 @@ layout: "about"
         <li><strong>🔄 Transfer Learning</strong></li>
         <li><strong>🖼️ Cross-modal Retrieval</strong></li>
         <li><strong>🕵️‍♂️ Person Re-identification</strong></li>
+        <li><strong>🤖 Multimodal Large Models</strong></li>
     </ul>
 </div>
 
@@ -50,10 +51,14 @@ layout: "about"
     </ul>
 </div>
 
-## 📝 Publications 
+## 📝 Publications
+- [<span style="color:#1e90ff">CVPR, CCF-A</span>]  Two papers submitted to CVPR2026  — <span style="color:#ff0000"><i>Under Review</i></span>
+- [<span style="color:#1e90ff">ICME, CCF-B</span>]  One paper  submitted to ICME2026  — <span style="color:#ff0000"><i>Under Review</i></span>
 
-- [<span style="color:#1e90ff">AAAI 2025, CCF-A</span>] Attribute-Decoupled Multi-Subspace Proxy Learning for Text-Image Person Re-identification — <span style="color:#ff0000"><i>Under Review</i></span>
 
+## 📜 Patents
+- A Wavelet-Enhanced Test-Time Adaptation Method for Real-World Degradation Scenarios (2/5) — <span style="color:#ff0000"><i>Patent Application Accepted</i></span>  
+- An Attribute-Decoupled Multi-Subspace Proxy Learning Method for Text-Image Person Re-identification (3/5) — <span style="color:#ff0000"><i>Patent Application Accepted</i></span>
 
 
 ## 🚀 Competitions & Achievements
@@ -86,6 +91,7 @@ layout: "about"
 ## 🎖 Honors & Awards
 <div style="padding-left: 20px;">
     <ul style="font-size: 1em; line-height: 1.6; color: #555;">
+        <li><strong>Second-Class Freshman Scholarship</strong> (2022, 2023, 2024)</li>
         <li><strong>National Endeavor Scholarship</strong> (2022, 2023, 2024)</li>
         <li><strong>Excellent Student Cadre</strong> (Dec 2024)</li>
         <li><strong>Excellent Communist Youth League Member</strong> (May 2024)</li>
