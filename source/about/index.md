@@ -91,7 +91,7 @@ layout: "about"
 ## 🎖 Honors & Awards
 <div style="padding-left: 20px;">
     <ul style="font-size: 1em; line-height: 1.6; color: #555;">
-        <li><strong>Second-Class Freshman Scholarship</strong> (2022, 2023, 2024)</li>
+        <li><strong>Second-Class Freshman Scholarship</strong> (Sep 2025)</li>
         <li><strong>National Endeavor Scholarship</strong> (2022, 2023, 2024)</li>
         <li><strong>Excellent Student Cadre</strong> (Dec 2024)</li>
         <li><strong>Excellent Communist Youth League Member</strong> (May 2024)</li>
