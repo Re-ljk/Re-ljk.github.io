@@ -19,7 +19,6 @@ layout: "about"
 <p style="font-size: 1em; line-height: 1.6; max-width: 800px; margin: 0 auto; color: #444;">
   &emsp;&emsp;My research interests include 
   <strong>🔄Transfer Learning</strong>, 
-  <strong>🖼️Cross-modal Retrieval</strong>, 
   <strong>🕵️‍♂️Person Re-identification</strong> and <strong>🤖Multimodal Large Models</strong>. If you are interested in my work, feel free to contact me via 
   <a href="mailto:jiangkuanli@163.com" style="color:#1E90FF; font-weight:bold;">email</a>, 
   connect with me on <a href="https://github.com/Re-ljk" style="color:#1E90FF; font-weight:bold;">GitHub</a>, 
@@ -36,7 +35,6 @@ layout: "about"
 <div style="padding-left: 20px;">
     <ul style="font-size: 1em; line-height: 1.6; color: #555;">
         <li><strong>🔄 Transfer Learning</strong></li>
-        <li><strong>🖼️ Cross-modal Retrieval</strong></li>
         <li><strong>🕵️‍♂️ Person Re-identification</strong></li>
         <li><strong>🤖 Multimodal Large Models</strong></li>
     </ul>
@@ -52,7 +50,8 @@ layout: "about"
 </div>
 
 ## 📝 Publications
-- [<span style="color:#1e90ff">CVPR, CCF-A</span>]  Two papers submitted to CVPR2026  — <span style="color:#ff0000"><i>Under Review</i></span>
+- [<span style="color:#1e90ff">ICML, CCF-A</span>]  One paper submitted to ICML2026  — <span style="color:#ff0000"><i>Under Review</i></span>
+- [<span style="color:#1e90ff">KDD, CCF-A</span>]  One paper submitted to KDD2026  — <span style="color:#ff0000"><i>Under Review</i></span>
 - [<span style="color:#1e90ff">ICME, CCF-B</span>]  One paper  submitted to ICME2026  — <span style="color:#ff0000"><i>Under Review</i></span>
 
 
