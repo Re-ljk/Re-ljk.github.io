@@ -105,6 +105,8 @@ deploy:
   type: git
   repo: https://github.com/Re-ljk/Re-ljk.github.io.git
   branch: main
+  # Publish .nojekyll so GitHub Pages serves the generated static site directly.
+  ignore_hidden: false
 
 
 plugins:
