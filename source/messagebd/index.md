@@ -1,7 +1,7 @@
 ---
 title: 留言板
 banner_img: https://static.kevinchu.top/blog/assets/img/bg_025.jpg
-comment: 'livere'
+comment: 'giscus'
 ---
 
 <style>
