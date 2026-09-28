@@ -26,8 +26,8 @@
 <meta property="og:site_name" content="Jiankuanli&#39;s Blog">
 <meta property="og:description" content=".page-content, .post-content {     overflow: hidden; }  .widget-border {     display: flex;       flex-wrap: wrap;     justify-content: center;       }  .widget-item {     max-width: 180px; }    🍺欢迎">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2026-09-28T11:12:14.793Z">
-<meta property="article:modified_time" content="2026-09-28T11:12:14.793Z">
+<meta property="article:published_time" content="2026-09-28T11:47:40.338Z">
+<meta property="article:modified_time" content="2026-09-28T11:47:40.338Z">
 <meta property="article:author" content="Jiankuanli">
 <meta property="article:tag" content="记录学习">
 <meta name="twitter:card" content="summary_large_image">
@@ -67,7 +67,6 @@
   
 <link rel="stylesheet" href="../css/macpanel.css">
 <link rel="stylesheet" href="//at.alicdn.com/t/c/font_4276126_oypdem1ivsg.css">
-<link rel="stylesheet" href="https://static.kevinchu.top/blog/assets/css/waline-custom.css">
 
 
 
@@ -319,14 +318,40 @@
   
     <article id="comments" lazyload>
       
-  <div id="lv-container" data-id="city" data-uid="MTAyMC82MDMzOS8zNjgwOQ==">
+    <div id="giscus" class="giscus"></div>
     <script type="text/javascript">
-      Fluid.utils.loadComments('#lv-container', function() {
-        Fluid.utils.createScript('https://cdn-city.livere.com/js/embed.dist.js');
+      Fluid.utils.loadComments('#giscus', function() {
+        var options = {"repo":"Re-ljk/Re-ljk.github.io","repo-id":"R_kgDONkTJmQ","category":"Announcements","category-id":"DIC_kwDONkTJmc4DGlG0","theme-light":"light","theme-dark":"dark","mapping":"pathname","reactions-enabled":1,"emit-metadata":0,"input-position":"top","lang":"zh-CN","strict":1,"loading":"lazy"};
+        var attributes = {};
+        for (let option in options) {
+          if (!option.startsWith('theme-')) {
+            var key = option.startsWith('data-') ? option : 'data-' + option;
+            attributes[key] = options[option];
+          }
+        }
+        var light = 'light';
+        var dark = 'dark';
+        window.GiscusThemeLight = light;
+        window.GiscusThemeDark = dark;
+        attributes['data-theme'] = document.documentElement.getAttribute('data-user-color-scheme') === 'dark' ? dark : light;
+        for (let attribute in attributes) {
+          var value = attributes[attribute];
+          if (value === undefined || value === null || value === '') {
+            delete attributes[attribute];
+          }
+        }
+        var s = document.createElement('script');
+        s.setAttribute('src', 'https://giscus.app/client.js');
+        s.setAttribute('crossorigin', 'anonymous');
+        for (let attribute in attributes) {
+          s.setAttribute(attribute, attributes[attribute]);
+        }
+        var ss = document.getElementsByTagName('script');
+        var e = ss.length > 0 ? ss[ss.length - 1] : document.head || document.documentElement;
+        e.parentNode.insertBefore(s, e.nextSibling);
       });
     </script>
     <noscript>Please enable JavaScript to view the comments</noscript>
-  </div>
 
 
     </article>
