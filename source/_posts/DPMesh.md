@@ -1,6 +1,6 @@
 ---
 title: 论文阅读笔记——DPMesh:Exploiting Diffusion Prior for Occluded Human Mesh Recovery
-index_img: https://static.kevinchu.top/blog/assets/img/cover_017.jpeg
+index_img: https://rammusleo.github.io/dpmesh-proj/static/images/pipeline.png
 mathjax: true
 date: 2025-05-06 22:20:35
 post_asset_folder: true
@@ -355,4 +355,3 @@ $$
 
 1. **极端场景处理能力有限**：在极端复杂的遮挡场景下，如人体大部分区域被严重遮挡或遮挡物具有特殊性质（如透明、反光等），DPMesh 的性能可能受到一定影响，需要进一步改进特征表示和推理机制，以更好地应对此类极端情况。
 2. **资源需求较高**：模型在训练和推理过程中对计算资源的需求相对较高，这在一定程度上限制了其在资源受限环境（如移动设备或边缘计算场景）中的广泛应用。未来需要探索更高效的算法优化策略，如模型压缩、量化等技术，以降低计算复杂度和资源消耗，提高其实际应用的可行性和灵活性。
-
