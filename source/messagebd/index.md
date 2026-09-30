@@ -1,6 +1,6 @@
 ---
 title: 留言板
-banner_img: https://static.kevinchu.top/blog/assets/img/bg_025.jpg
+banner_img: /assets/img/bg_025.jpg
 comment: 'giscus'
 ---
 
@@ -21,11 +21,11 @@ comment: 'giscus'
 }
 </style>
 
-<script src="https://static.kevinchu.top/blog/assets/js/sakura-weak.js"></script>
+<script src="/assets/js/sakura-weak.js"></script>
 
 <link
   rel="stylesheet"
-  href="https://static.kevinchu.top/blog/assets/css/sakana-widget-2.7.0.css"
+  href="/assets/css/sakana-widget-2.7.0.css"
 />
 
 <p style="text-align: center;">🍺欢迎！快来说点什么吧~</p>
@@ -40,16 +40,16 @@ comment: 'giscus'
 <script>
   function initSakanaWidget() {
     const map = new Map([
-        ['pokemon-pikachu','https://static.kevinchu.top/blog/assets/img/pokemon-pikachu.png'],
-        ['pokemon-psyduck','https://static.kevinchu.top/blog/assets/img/pokemon-psyduck.png'],
-        ['pokemon-slowpoke','https://static.kevinchu.top/blog/assets/img/pokemon-slowpoke.png'],
-        ['pokemon-bulbasaur','https://static.kevinchu.top/blog/assets/img/pokemon-bulbasaur.png'],
-        ['pokemon-charmander','https://static.kevinchu.top/blog/assets/img/pokemon-charmander.png'],
-        ['pokemon-squirtle','https://static.kevinchu.top/blog/assets/img/pokemon-squirtle.png'],
-        ['pokemon-eevee','https://static.kevinchu.top/blog/assets/img/pokemon-eevee.png'],
-        ['pokemon-jigglypuff','https://static.kevinchu.top/blog/assets/img/pokemon-jigglypuff.png'],
-        ['pokemon-cubone','https://static.kevinchu.top/blog/assets/img/pokemon-cubone.png'],
-        ['pokemon-snorlax','https://static.kevinchu.top/blog/assets/img/pokemon-snorlax.png']
+        ['pokemon-pikachu','/assets/img/pokemon-pikachu.png'],
+        ['pokemon-psyduck','/assets/img/pokemon-psyduck.png'],
+        ['pokemon-slowpoke','/assets/img/pokemon-slowpoke.png'],
+        ['pokemon-bulbasaur','/assets/img/pokemon-bulbasaur.png'],
+        ['pokemon-charmander','/assets/img/pokemon-charmander.png'],
+        ['pokemon-squirtle','/assets/img/pokemon-squirtle.png'],
+        ['pokemon-eevee','/assets/img/pokemon-eevee.png'],
+        ['pokemon-jigglypuff','/assets/img/pokemon-jigglypuff.png'],
+        ['pokemon-cubone','/assets/img/pokemon-cubone.png'],
+        ['pokemon-snorlax','/assets/img/pokemon-snorlax.png']
     ]);
 
     function registerSakana(name, img){
@@ -73,5 +73,5 @@ comment: 'giscus'
 <script
   async
   onload="initSakanaWidget()"
-  src="https://static.kevinchu.top/blog/assets/js/sakana-widget-2.7.0.js"
+  src="/assets/js/sakana-widget-2.7.0.js"
 ></script>

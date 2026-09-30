@@ -229,9 +229,9 @@ font:
 # Specify the path of your custom js file, support list. The path is relative to the source directory, such as `/js/custom.js` corresponding to the directory `source/js/custom.js`
 custom_js:
   # 小星星特效
-  - https://static.kevinchu.top/blog/assets/js/stars.js
+  - /assets/js/stars.js
   # 打字礼花特效
-  - https://static.kevinchu.top/blog/assets/js/typing-effect.js
+  - /assets/js/typing-effect.js
 
 
 # 指定自定义 .css 文件路径，用法和 custom_js 相同
@@ -566,13 +566,13 @@ index:
 # Post Page
 #---------------------------
 post:
-  banner_img: https://static.kevinchu.top/blog/assets/img/bg_023.jpg
+  banner_img: /assets/img/bg_023.jpg
   banner_img_height: 60
   banner_mask_alpha: 0.3
 
   # 文章在首页的默认封面图，当没有指定 index_img 时会使用该图片，若两者都为空则不显示任何图片
   # Path of the default post cover when `index_img` is not set. If both are empty, no image will be displayed
-  default_index_img: https://static.kevinchu.top/blog/assets/img/bg_008.jpg
+  default_index_img: /assets/img/bg_008.jpg
 
   # 文章标题下方的元信息
   # Meta information below title
@@ -928,7 +928,7 @@ giscus:
 # Archive Page
 #---------------------------
 archive:
-  banner_img: https://static.kevinchu.top/blog/assets/img/bg_011.jpg
+  banner_img: /assets/img/bg_011.jpg
   banner_img_height: 60
   banner_mask_alpha: 0.3
 
@@ -939,7 +939,7 @@ archive:
 #---------------------------
 category:
   enable: true
-  banner_img: https://static.kevinchu.top/blog/assets/img/bg_011.jpg
+  banner_img: /assets/img/bg_011.jpg
   banner_img_height: 60
   banner_mask_alpha: 0.3
 
@@ -968,7 +968,7 @@ category:
 #---------------------------
 tag:
   enable: true
-  banner_img: https://static.kevinchu.top/blog/assets/img/bg_011.jpg
+  banner_img: /assets/img/bg_011.jpg
   banner_img_height: 60
   banner_mask_alpha: 0.3
   tagcloud:
@@ -986,7 +986,7 @@ tag:
 
 about:
   enable: true
-  banner_img: https://static.kevinchu.top/blog/assets/img/bg_007.jpg
+  banner_img: /assets/img/bg_007.jpg
   banner_img_height: 60
   banner_mask_alpha: 0.3
   avatar: https://pic4.zhimg.com/70e811b36e536304ca1bd17724db0f1f_r.jpg
@@ -1038,7 +1038,7 @@ page404:
 #---------------------------
 links:
   enable: true
-  banner_img: https://static.kevinchu.top/blog/assets/img/bg_015.jpg
+  banner_img: /assets/img/bg_015.jpg
   banner_img_height: 60
   banner_mask_alpha: 0.3
   custom:
